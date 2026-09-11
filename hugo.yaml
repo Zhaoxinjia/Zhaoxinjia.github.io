@@ -143,8 +143,6 @@ params:
       url: "mailto:zhaoxinjia@dicp.ac.cn"
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=gJ9BsdAAAAAJ"
-    - name: cv
-      url: "cv/Xinjia_Zhao_CV.pdf"
 
   cover:
     hidden: true
