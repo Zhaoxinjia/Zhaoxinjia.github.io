@@ -1,0 +1,164 @@
+baseURL: "https://zhaoxinjia.github.io/"
+title: "Xinjia Zhao"
+theme: "PaperMod"
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    label: "English"
+    weight: 1
+    params:
+      subtitle: "Assistant Researcher, Dalian Institute of Chemical Physics, CAS"
+      profileMode:
+        enabled: true
+        title: "Xinjia Zhao"
+        subtitle: "Nanopore single-molecule sensing · Bioanalysis · Medical engineering"
+        imageUrl: "img/avatar.png"
+        imageWidth: 160
+        imageHeight: 160
+        imageTitle: "Xinjia Zhao"
+        buttons:
+          - name: Publications
+            url: /publications/
+          - name: Research
+            url: /research/
+    menu:
+      main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 1
+        - identifier: research
+          name: Research
+          url: /research/
+          weight: 2
+        - identifier: publications
+          name: Publications
+          url: /publications/
+          weight: 3
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 4
+        - identifier: contact
+          name: Contact
+          url: /contact/
+          weight: 5
+  zh:
+    label: "中文"
+    weight: 2
+    title: "赵新佳"
+    params:
+      subtitle: "中国科学院大连化学物理研究所 助理研究员"
+      profileMode:
+        enabled: true
+        title: "赵新佳"
+        subtitle: "纳米孔单分子检测 · 生物分析 · 医工交叉"
+        imageUrl: "img/avatar.png"
+        imageWidth: 160
+        imageHeight: 160
+        imageTitle: "赵新佳"
+        buttons:
+          - name: 发表论文
+            url: /zh/publications/
+          - name: 研究方向
+            url: /zh/research/
+    menu:
+      main:
+        - identifier: about
+          name: 关于我
+          url: /zh/about/
+          weight: 1
+        - identifier: research
+          name: 研究方向
+          url: /zh/research/
+          weight: 2
+        - identifier: publications
+          name: 发表论文
+          url: /zh/publications/
+          weight: 3
+        - identifier: projects
+          name: 科研项目
+          url: /zh/projects/
+          weight: 4
+        - identifier: contact
+          name: 联系方式
+          url: /zh/contact/
+          weight: 5
+
+params:
+  env: production
+  title: "Xinjia Zhao"
+  description: "Personal academic website of Xinjia Zhao — nanopore single-molecule sensing and bioanalysis."
+  keywords: ["Xinjia Zhao", "nanopore", "single-molecule", "bioanalysis", "DICP", "CAS"]
+  author: "Xinjia Zhao"
+
+  defaultTheme: dark
+  disableThemeToggle: false
+  displayFullLangName: true
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: true
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  assets:
+    disableHLJS: true
+    favicon: "img/favicon.png"
+    favicon16x16: "img/favicon.png"
+    favicon32x32: "img/favicon.png"
+
+  label:
+    text: "Xinjia Zhao"
+    icon: "img/avatar.png"
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "Xinjia Zhao"
+    Content: "Nanopore single-molecule sensing and bioanalysis."
+
+  socialIcons:
+    - name: email
+      url: "mailto:zhaoxinjia@dicp.ac.cn"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=gJ9BsdAAAAAJ"
+    - name: cv
+      url: "cv/Xinjia_Zhao_CV.pdf"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  editPost:
+    disabled: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
