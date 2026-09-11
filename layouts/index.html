@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+<div class="home-hero">
+    <div class="hero-text">
+        <img class="hero-photo" src="{{ "img/photo.jpg" | absURL }}" alt="{{ .Site.Title }}">
+        <h1 class="hero-name">{{ if $isZh }}赵新佳{{ else }}Xinjia Zhao{{ end }}</h1>
+        <p class="hero-affil">
+            {{- if $isZh -}}
+            中国科学院大连化学物理研究所 · 助理研究员
+            {{- else -}}
+            Assistant Researcher · Dalian Institute of Chemical Physics, CAS
+            {{- end -}}
+        </p>
+        <p class="hero-tag">
+            {{- if $isZh -}}
+            纳米孔单分子检测 · 生物分析 · 医工交叉
+            {{- else -}}
+            Nanopore single-molecule sensing · Bioanalysis · Medical engineering
+            {{- end -}}
+        </p>
+        <div class="hero-buttons">
+            <a class="hero-btn" href="{{ "publications/" | absLangURL }}">{{ if $isZh }}发表论文{{ else }}Publications{{ end }}</a>
+            <a class="hero-btn" href="{{ "research/" | absLangURL }}">{{ if $isZh }}研究方向{{ else }}Research{{ end }}</a>
+        </div>
+    </div>
+    <figure class="hero-cover">
+        <a href="https://doi.org/10.1021/acs.jpcb.1c02296" target="_blank" rel="noopener">
+            <img src="{{ "img/cover-art.jpg" | absURL }}"
+                 alt="{{ if $isZh }}J. Phys. Chem. B 2021 期刊封面{{ else }}J. Phys. Chem. B 2021 cover art{{ end }}">
+        </a>
+        <figcaption>
+            {{- if $isZh -}}
+            J. Phys. Chem. B 2021 期刊封面 — 纳米孔 DNA 测序中的相互作用力研究
+            {{- else -}}
+            Cover art of J. Phys. Chem. B (2021) — interaction forces in nanopore DNA sequencing
+            {{- end -}}
+        </figcaption>
+    </figure>
+</div>
+<div class="home-social">
+    {{- partial "social_icons.html" -}}
+</div>
+{{ end }}

@@ -18,12 +18,3 @@ We develop core solid-state nanopore detection modules and build single-molecule
 ### 3. Mechanism and theory-guided detection optimization
 
 Combining **molecular dynamics simulation** with multiscale theoretical calculations, we study how molecular conformation, pore-interface interactions, and trans-pore transport shape the ionic current signal — guiding pore design and detection-condition optimization, and providing theoretical grounding for disease-related molecular recognition and drug-mechanism studies.
-
-## Future Work
-
-Building on my experience in nanopore devices, single-molecule manipulation, and molecular recognition, I aim to build an **integrated nanopore single-molecule detection platform** combining controllable pore fabrication, closed-loop molecular ping-pong manipulation, and intelligent electrical-signal analysis.
-
-Two key thrusts:
-
-1. **Independent platform & non-DNA ping-pong manipulation** — extending repeated recapture from DNA to peptides, proteins, and glycans, via pore-wall interface regulation, combined electrophoretic/electroosmotic driving, and carrier-assisted strategies.
-2. **Fine recognition for disease-related molecules and drug analysis** — expanding from citrullination to phosphorylation, acetylation and other post-translational modifications, glycan linkage/branching isomers, and nucleic-acid variants; linking molecular structure–pore interaction–current signatures through simulation to guide device and recognition-strategy optimization.
