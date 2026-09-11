@@ -1,0 +1,18 @@
+/* 自定义样式：赵新佳个人网站 */
+
+/* 主页头像 */
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--tertiary);
+}
+
+/* 回到顶部按钮：缩小 */
+#top-link,
+.top-link {
+    width: 2rem;
+    height: 2rem;
+    padding: 6px;
+    bottom: 2.5rem;
+    right: 1.25rem;
+    border-radius: 50%;
+}

@@ -25,8 +25,8 @@ languages:
         title: "Xinjia Zhao"
         subtitle: "Nanopore single-molecule sensing · Bioanalysis · Medical engineering"
         imageUrl: "img/avatar.png"
-        imageWidth: 160
-        imageHeight: 160
+        imageWidth: 110
+        imageHeight: 110
         imageTitle: "Xinjia Zhao"
         buttons:
           - name: Publications
@@ -66,8 +66,8 @@ languages:
         title: "赵新佳"
         subtitle: "纳米孔单分子检测 · 生物分析 · 医工交叉"
         imageUrl: "img/avatar.png"
-        imageWidth: 160
-        imageHeight: 160
+        imageWidth: 110
+        imageHeight: 110
         imageTitle: "赵新佳"
         buttons:
           - name: 发表论文
