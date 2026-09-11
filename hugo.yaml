@@ -71,30 +71,30 @@ languages:
         imageTitle: "赵新佳"
         buttons:
           - name: 发表论文
-            url: /zh/publications/
+            url: publications/
           - name: 研究方向
-            url: /zh/research/
+            url: research/
     menu:
       main:
         - identifier: about
           name: 关于我
-          url: /zh/about/
+          url: about/
           weight: 1
         - identifier: research
           name: 研究方向
-          url: /zh/research/
+          url: research/
           weight: 2
         - identifier: publications
           name: 发表论文
-          url: /zh/publications/
+          url: publications/
           weight: 3
         - identifier: projects
           name: 科研项目
-          url: /zh/projects/
+          url: projects/
           weight: 4
         - identifier: contact
           name: 联系方式
-          url: /zh/contact/
+          url: contact/
           weight: 5
 
 params:
@@ -105,7 +105,7 @@ params:
   author: "Xinjia Zhao"
 
   defaultTheme: dark
-  disableThemeToggle: false
+  disableThemeToggle: true
   displayFullLangName: true
 
   ShowReadingTime: false
