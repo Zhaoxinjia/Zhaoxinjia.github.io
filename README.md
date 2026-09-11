@@ -27,15 +27,23 @@ npm run dev        # 启动开发服务器，默认 http://localhost:7100
 - 头像 / 图标：`static/img/`；简历 PDF：`static/cv/Xinjia_Zhao_CV.pdf`
 - 站点配置（菜单、社交链接、简介文字）：`hugo.yaml`
 
-## 部署到 GitHub Pages（免费域名 zhaoxinjia.github.io）
+## 部署（已上线：https://zhaoxinjia.github.io）
 
-1. 在 GitHub 创建账号，新建仓库，仓库名必须为 **`zhaoxinjia.github.io`**
-2. 推送代码：`git remote add origin https://github.com/zhaoxinjia/zhaoxinjia.github.io.git && git push -u origin main`
-3. 在仓库 **Settings → Pages** 中，Source 选择 **GitHub Actions**
-4. 新建 `.github/workflows/deploy.yml`（Hugo 官方 Action 工作流，可从 Hugo 官网复制），推送后自动构建部署
-5. 几分钟后访问 https://zhaoxinjia.github.io
+网站已部署到 GitHub Pages，发布源为仓库的 `gh-pages` 分支（存放构建后的静态文件），源代码在 `main` 分支。
 
-以后每次更新内容：修改 `.md` 文件 → `git add . && git commit -m "update" && git push`，网站自动重新部署。
+**更新网站后发布：**
+
+```bash
+npm run deploy      # 本地构建 → 提交 public/ → 推送到 gh-pages，自动上线
+```
+
+日常更新内容的完整流程：
+
+1. 编辑 `content/` 下的 Markdown 文件（中英文同步修改）
+2. `git add . && git commit -m "update" && git push`（保存源代码）
+3. `npm run deploy`（发布到线上）
+
+> 首次在新机器上使用时，需先在 `public/` 目录里配置一次推送凭据（`git remote add origin https://github.com/Zhaoxinjia/Zhaoxinjia.github.io.git`，并登录 GitHub 账号或使用令牌）。
 
 ## 注意事项
 
