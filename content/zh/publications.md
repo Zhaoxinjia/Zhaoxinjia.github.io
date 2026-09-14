@@ -10,7 +10,7 @@ draft: false
 `#` 共同第一作者；`*` 通讯作者。
 
 <ol reversed>
-<li><u><strong>Xinjia Zhao</strong></u>, Guangyan Qing*, Jiarong Zhang, Juanjuan Zhao, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026（接收）.</li>
+<li><u><strong>Xinjia Zhao</strong></u>#, Jiarong Zhang#, Juanjuan Zhao#, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian, Guangyan Qing*. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026（审稿中）.</li>
 <li>Xiaoyu Chen, Jiao-ao Sun, <u><strong>Xinjia Zhao</strong></u>, Zhuang Mi, Haitao Tang, Kaikai Chen, Xinyan Shan, Xinghua Lu*. Quartz-supported suspended membrane for ultra-sensitive solid-state nanopore with sub-1 pF capacitance. <em>Adv. Funct. Mater.</em>, 2026, 36, e77522.</li>
 <li>Dongdong Wang, <u><strong>Xinjia Zhao</strong></u>*, Minmin Li, Jiarong Zhang, Yingying Lian, Guangyan Qing*. Multiscale theoretical calculations drive mechanism analysis and application expansion of nanopore detection. <em>Anal. Sens.</em>, 2026, 6, e202600002.（通讯作者。）</li>
 <li>Jiaqi Li, <u><strong>Xinjia Zhao</strong></u>, Minmin Li, Wei Yu, Yuting Li, Chen Zhang, Hongzhi Cao, Kan Zhong, Jing Wang, Yuchen Cao, Xiaonong Li, Han Zhou, Guoxiong Wang, Xinmiao Liang*, Guangyan Qing*. Single-feature identification of α2-8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis. <em>J. Am. Chem. Soc.</em>, 2026, 148, 10649–10662.</li>
