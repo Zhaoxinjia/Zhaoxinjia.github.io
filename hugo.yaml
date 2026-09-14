@@ -14,6 +14,11 @@ buildExpired: false
 minify:
   disableXML: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 languages:
   en:
     label: "English"
@@ -47,14 +52,10 @@ languages:
           name: Publications
           url: /publications/
           weight: 3
-        - identifier: projects
-          name: Projects
-          url: /projects/
-          weight: 4
         - identifier: contact
           name: Contact
           url: /contact/
-          weight: 5
+          weight: 4
   zh:
     label: "中文"
     weight: 2
@@ -88,14 +89,10 @@ languages:
           name: 发表论文
           url: publications/
           weight: 3
-        - identifier: projects
-          name: 科研项目
-          url: projects/
-          weight: 4
         - identifier: contact
           name: 联系方式
           url: contact/
-          weight: 5
+          weight: 4
 
 params:
   env: production
@@ -143,6 +140,8 @@ params:
       url: "mailto:zhaoxinjia@dicp.ac.cn"
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=gJ9BsdAAAAAJ"
+    - name: researchgate
+      url: "https://www.researchgate.net/profile/Xinjia-Zhao"
 
   cover:
     hidden: true

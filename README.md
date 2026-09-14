@@ -16,7 +16,6 @@ npm run dev        # 启动开发服务器，默认 http://localhost:7100
 | 关于我 | `/about/` | `/zh/about/` |
 | 研究方向 | `/research/` | `/zh/research/` |
 | 发表论文 | `/publications/` | `/zh/publications/` |
-| 科研项目 | `/projects/` | `/zh/projects/` |
 | 联系方式 | `/contact/` | `/zh/contact/` |
 
 ## 更新内容
