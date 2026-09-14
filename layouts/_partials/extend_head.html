@@ -1,0 +1,49 @@
+{{- /* Research 页滚动逐段浮现：仅在 Research 页注入（head 按页面渲染，条件判断可靠）；渐进增强，无 JS 时内容默认全部可见 */ -}}
+{{- if in .RelPermalink "research" }}
+<script defer>
+(function () {
+    if (!("IntersectionObserver" in window)) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    function init() {
+        var blocks = document.querySelectorAll(".post-content h2, .post-content h3, .post-content p, .post-content ul");
+        if (!blocks.length) return;
+
+        // 仅在确认支持后再加隐藏类，保证无JS/降级时内容可见
+        Array.prototype.forEach.call(blocks, function (el) {
+            el.classList.add("sr");
+        });
+
+        var io = new IntersectionObserver(function (entries) {
+            var visible = [];
+            entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                    visible.push(e.target);
+                    io.unobserve(e.target);
+                }
+            });
+            // 同批进入视口的元素按顺序依次延迟，形成逐段浮现感
+            visible.forEach(function (el, i) {
+                el.style.setProperty("--sr-delay", (i * 0.08) + "s");
+                el.classList.add("sr-in");
+            });
+        }, { threshold: 0.08, rootMargin: "0px 0px -6% 0px" });
+
+        Array.prototype.forEach.call(blocks, function (el) { io.observe(el); });
+
+        // 兜底：3.5 秒后仍未触发的元素直接显示，任何情况下都不会隐藏内容
+        setTimeout(function () {
+            Array.prototype.forEach.call(blocks, function (el) {
+                el.classList.add("sr-in");
+            });
+        }, 3500);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+</script>
+{{- end }}
