@@ -3,7 +3,7 @@ title: "About"
 draft: false
 ---
 
-I am an Assistant Researcher at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu, a pioneer of solid-state nanopore research in China), and my B.S. in physics from Jilin University.
+I am an Assistant Researcher at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu), and my B.S. in physics from Jilin University.
 
 My research lies at the intersection of **nanopore single-molecule sensing devices** and **biomedical analysis**. I work on molecular recognition with engineered nanopores, detection platform development, and mechanism studies, targeting protein post-translational modifications, glycan structures, and drug–nucleic acid interactions — aiming to provide new analytical methods and technology support for disease-related biomolecular characterization and drug development.
 

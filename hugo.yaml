@@ -23,6 +23,7 @@ languages:
   en:
     label: "English"
     weight: 1
+    contentDir: content/en
     params:
       subtitle: "Assistant Researcher, Dalian Institute of Chemical Physics, CAS"
       profileMode:
@@ -60,6 +61,7 @@ languages:
     label: "中文"
     weight: 2
     title: "赵新佳"
+    contentDir: content/zh
     params:
       subtitle: "中国科学院大连化学物理研究所 助理研究员"
       profileMode:
@@ -77,19 +79,19 @@ languages:
             url: research/
     menu:
       main:
-        - identifier: about
+        - identifier: zh-about
           name: 关于我
           url: about/
           weight: 1
-        - identifier: research
+        - identifier: zh-research
           name: 研究方向
           url: research/
           weight: 2
-        - identifier: publications
+        - identifier: zh-publications
           name: 发表论文
           url: publications/
           weight: 3
-        - identifier: contact
+        - identifier: zh-contact
           name: 联系方式
           url: contact/
           weight: 4
