@@ -109,6 +109,29 @@
                 </a>
             </li>
             {{- end }}
+            {{- if (not site.Params.disableLangToggle) }}
+                {{- $lang := .Lang }}
+                {{- with .Site.Home.Translations }}
+                <li class="lang-switch-item">
+                    <ul class="lang-menu">
+                        {{- range . }}
+                        {{- if ne $lang .Lang }}
+                        <li>
+                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                                {{- .Language.LanguageName | emojify -}}
+                                {{- else }}
+                                {{- .Lang | title -}}
+                                {{- end -}}
+                            </a>
+                        </li>
+                        {{- end }}
+                        {{- end }}
+                    </ul>
+                </li>
+                {{- end }}
+            {{- end }}
         </ul>
     </nav>
 </header>

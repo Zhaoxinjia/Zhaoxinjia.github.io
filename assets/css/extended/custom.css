@@ -216,3 +216,23 @@ body>* {
         font-size: 1.7rem;
     }
 }
+
+/* ===== 语言切换：隐藏左上角旧位置，作为导航栏最后一项 ===== */
+.logo-switches {
+    display: none !important;
+}
+
+.lang-switch-item {
+    margin-inline-start: 0.6rem;
+}
+
+.lang-switch-item ul.lang-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lang-switch-item ul.lang-menu li a {
+    border-bottom: 2px solid transparent;
+}
