@@ -5,12 +5,13 @@
 
 /* ---------- 全局背景：深色 + 彩虹流光 ---------- */
 body {
-    background:
+    background-color: #0b0c12;
+    background-image:
         radial-gradient(60% 50% at 12% -5%, rgba(96, 96, 255, .16), transparent 60%),
         radial-gradient(50% 42% at 88% 0%, rgba(0, 210, 255, .13), transparent 60%),
         radial-gradient(65% 55% at 50% 105%, rgba(255, 64, 180, .11), transparent 60%),
-        radial-gradient(42% 38% at 0% 95%, rgba(64, 255, 170, .1), transparent 60%),
-        #0b0c12;
+        radial-gradient(42% 38% at 0% 95%, rgba(64, 255, 170, .1), transparent 60%);
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
