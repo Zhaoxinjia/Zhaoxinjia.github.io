@@ -131,7 +131,7 @@ params:
 
   label:
     text: "Xinjia Zhao"
-    icon: "img/avatar.png"
+    icon: "img/logo-nanopore.png"
     iconHeight: 35
 
   homeInfoParams:
@@ -143,6 +143,8 @@ params:
       url: "mailto:zhaoxinjia@dicp.ac.cn"
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=gJ9BsdAAAAAJ"
+    - name: orcid
+      url: "https://orcid.org/0000-0001-5101-7273"
     - name: researchgate
       url: "https://www.researchgate.net/profile/Xinjia-Zhao"
 
