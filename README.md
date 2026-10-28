@@ -26,7 +26,7 @@ npm run dev        # 启动开发服务器，默认 http://localhost:7100
 - 头像 / 图标：`static/img/`；简历 PDF：`static/cv/Xinjia_Zhao_CV.pdf`
 - 站点配置（菜单、社交链接、简介文字）：`hugo.yaml`
 
-## 部署（已上线：https://zhaoxinjia.github.io）
+## 部署（已上线：[https://zhaoxinjia.github.io/](https://zhaoxinjia.github.io/)）
 
 网站已部署到 GitHub Pages，发布源为仓库的 `gh-pages` 分支（存放构建后的静态文件），源代码在 `main` 分支。
 
