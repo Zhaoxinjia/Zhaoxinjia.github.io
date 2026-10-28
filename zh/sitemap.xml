@@ -10,7 +10,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/categories/"
                 />
   </url><url>
@@ -22,20 +22,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/tags/"
-                />
-  </url><url>
-    <loc>https://zhaoxinjia.github.io/zh/publications/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhaoxinjia.github.io/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhaoxinjia.github.io/zh/publications/"
                 />
   </url><url>
     <loc>https://zhaoxinjia.github.io/zh/about/</loc>
@@ -46,7 +34,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/about/"
                 />
   </url><url>
@@ -58,8 +46,20 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/contact/"
+                />
+  </url><url>
+    <loc>https://zhaoxinjia.github.io/zh/publications/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhaoxinjia.github.io/publications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://zhaoxinjia.github.io/zh/publications/"
                 />
   </url><url>
     <loc>https://zhaoxinjia.github.io/zh/research/</loc>
@@ -70,7 +70,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/research/"
                 />
   </url><url>
@@ -82,7 +82,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-CN"
                 href="https://zhaoxinjia.github.io/zh/"
                 />
   </url>
