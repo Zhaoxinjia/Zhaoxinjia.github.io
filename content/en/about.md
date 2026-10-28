@@ -9,8 +9,7 @@ My research lies at the intersection of **nanopore single-molecule sensing devic
 
 ## Highlights
 
-- **24** SCI papers, cited **350+** times, **h-index 12** ([Google Scholar](https://scholar.google.com/citations?user=gJ9BsdAAAAAJ))
-- **8** papers as first author (incl. co-first) or corresponding author, including *Nat. Commun.*, *Trends Anal. Chem.*, *ACS Nano*, *Nano Lett.*, *Nanoscale*
+- **24** published SCI papers.
 - **5** Chinese invention patent applications, **3** granted
 - First Prize of the 2025 Science and Technology Award for Analysis and Testing (7th contributor)
 - Supported by the Liaoning "Xingliao Yingcai" Postdoctoral Reserve Program (2024)

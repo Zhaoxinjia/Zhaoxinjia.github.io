@@ -1,43 +1,48 @@
 {{ define "main" }}
-{{- $isZh := eq .Site.Language.Lang "zh" -}}
-<div class="home-hero">
-    <div class="hero-text">
-        <img class="hero-photo" src="{{ "img/photo.jpg" | absURL }}" alt="{{ .Site.Title }}">
-        <h1 class="hero-name">{{ if $isZh }}赵新佳{{ else }}Xinjia Zhao{{ end }}</h1>
-        <p class="hero-affil">
-            {{- if $isZh -}}
-            中国科学院大连化学物理研究所 · 助理研究员
-            {{- else -}}
-            Assistant Researcher · Dalian Institute of Chemical Physics, CAS
-            {{- end -}}
-        </p>
-        <p class="hero-tag">
-            {{- if $isZh -}}
-            纳米孔单分子检测 · 生物分析 · 医工交叉
-            {{- else -}}
-            Nanopore single-molecule sensing · Bioanalysis · Medical engineering
-            {{- end -}}
-        </p>
-        <div class="hero-buttons">
-            <a class="hero-btn" href="{{ "publications/" | absLangURL }}">{{ if $isZh }}发表论文{{ else }}Publications{{ end }}</a>
-            <a class="hero-btn" href="{{ "research/" | absLangURL }}">{{ if $isZh }}研究方向{{ else }}Research{{ end }}</a>
-        </div>
+{{ $copy := index hugo.Data.home .Lang }}
+<section class="home-hero" aria-labelledby="hero-name">
+  <div class="hero-text">
+    <p class="eyebrow">{{ $copy.role }}</p>
+    <h1 id="hero-name">{{ site.Title }}</h1>
+    <p class="hero-affil">{{ $copy.affiliation }}</p>
+    <p class="hero-intro">{{ $copy.intro }}</p>
+    <p class="hero-summary">{{ $copy.summary }}</p>
+    <div class="hero-buttons">
+      <a class="hero-btn primary" href="{{ "research/" | relLangURL }}">{{ $copy.research }}</a>
+      <a class="hero-btn" href="{{ "about/" | relLangURL }}">{{ $copy.about }}</a>
     </div>
-    <figure class="hero-cover">
-        <a href="https://doi.org/10.1021/acs.jpcb.1c02296" target="_blank" rel="noopener">
-            <img src="{{ "img/cover-art.jpg" | absURL }}"
-                 alt="{{ if $isZh }}J. Phys. Chem. B 2021 期刊封面{{ else }}J. Phys. Chem. B 2021 cover art{{ end }}">
-        </a>
-        <figcaption>
-            {{- if $isZh -}}
-            J. Phys. Chem. B 2021 期刊封面 — 纳米孔 DNA 测序中的相互作用力研究
-            {{- else -}}
-            Cover art of J. Phys. Chem. B (2021) — interaction forces in nanopore DNA sequencing
-            {{- end -}}
-        </figcaption>
-    </figure>
-</div>
-<div class="home-social">
-    {{- partial "social_icons.html" -}}
-</div>
+    <div class="home-social">{{ partial "social_icons.html" (dict) }}</div>
+  </div>
+  <img class="hero-photo" src="{{ "img/photo.jpg" | relURL }}" alt="{{ site.Title }}" width="240" height="240" fetchpriority="high">
+</section>
+<section class="home-section" aria-labelledby="research-title">
+  <h2 id="research-title">{{ $copy.research }}</h2>
+  <div class="research-grid">
+    {{ range $copy.directions }}
+    <a class="research-card" href="{{ "research/" | relLangURL }}#{{ .id }}">
+      <h3 lang="en">{{ .title }}</h3>
+      {{ with .label }}<p class="direction-label">{{ . }}</p>{{ end }}
+      <p>{{ .description }}</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+<section class="home-section selected-section" aria-labelledby="selected-title">
+  <h2 id="selected-title">{{ $copy.selected }}</h2>
+  {{ $lang := .Lang }}
+  {{ with hugo.Data.selected_publications.confirmed_ids }}
+  <ol class="publication-list">
+    {{ range . }}
+      {{ $matches := where hugo.Data.publications "id" . }}
+      {{ if ne (len $matches) 1 }}{{ errorf "Unknown selected publication ID: %s" . }}{{ end }}
+      {{ range $matches }}
+        {{ if ne .status "published" }}{{ errorf "Selected publication %s must be published" .id }}{{ end }}
+        <li>{{ index .citation $lang | safeHTML }}</li>
+      {{ end }}
+    {{ end }}
+  </ol>
+  {{ else }}<p class="selection-note">{{ $copy.pending }}</p>{{ end }}
+  <a class="text-link" href="{{ "publications/" | relLangURL }}">{{ $copy.publications }} <span aria-hidden="true">→</span></a>
+</section>
 {{ end }}

@@ -22,6 +22,7 @@ markup:
 languages:
   en:
     label: "English"
+    locale: "en"
     weight: 1
     contentDir: content/en
     params:
@@ -59,10 +60,12 @@ languages:
           weight: 4
   zh:
     label: "中文"
+    locale: "zh-CN"
     weight: 2
     title: "赵新佳"
     contentDir: content/zh
     params:
+      description: "赵新佳，中国科学院大连化学物理研究所助理研究员，研究纳米孔单分子检测、生物分析与医工交叉。"
       subtitle: "中国科学院大连化学物理研究所 助理研究员"
       profileMode:
         enabled: true
@@ -124,6 +127,8 @@ params:
   tocopen: false
   assets:
     disableHLJS: true
+    theme_color: "#0C1422"
+    msapplication_TileColor: "#0C1422"
     favicon: "img/favicon.png"
     favicon16x16: "img/favicon-16x16.png"
     favicon32x32: "img/favicon-32x32.png"

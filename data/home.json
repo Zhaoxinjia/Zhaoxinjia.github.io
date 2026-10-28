@@ -1,0 +1,61 @@
+{
+  "en": {
+    "role": "Assistant Researcher",
+    "affiliation": "Dalian Institute of Chemical Physics, Chinese Academy of Sciences",
+    "intro": "Nanopore single-molecule sensing, bioanalysis, and medical engineering.",
+    "summary": "Developing molecular recognition methods and actively controllable, repeatedly readable single-molecule analysis platforms.",
+    "research": "Research directions",
+    "publications": "All publications",
+    "about": "About me",
+    "selected": "Selected Publications",
+    "pending": "A selection of publications will be added here. The full list is available below, organized by publication status.",
+    "directions": [
+      {
+        "id": "nanopore-sensing",
+        "title": "Nanopore Sensing",
+        "description": "Engineered nanopores for molecular recognition of protein modifications, glycans, and drug–DNA interactions."
+      },
+      {
+        "id": "single-molecule-manipulation",
+        "title": "Single-Molecule Manipulation",
+        "description": "Solid-state nanopore devices, molecular ping-pong control, and repeated capture for multiple measurements of the same molecule."
+      },
+      {
+        "id": "mechanistic-studies",
+        "title": "Mechanistic Studies",
+        "description": "Molecular dynamics and multiscale calculations to study pore interactions, molecular transport, and ionic current signals."
+      }
+    ]
+  },
+  "zh": {
+    "role": "助理研究员",
+    "affiliation": "中国科学院大连化学物理研究所",
+    "intro": "纳米孔单分子检测 · 生物分析 · 医工交叉",
+    "summary": "发展纳米孔分子识别方法，构建主动操控、多次读取的单分子分析平台。",
+    "research": "研究方向",
+    "publications": "全部论文与稿件",
+    "about": "关于我",
+    "selected": "代表论文 · Selected Publications",
+    "pending": "代表论文选目将于确认后补充。完整论文与稿件列表已按出版状态分类，可通过下方入口查看。",
+    "directions": [
+      {
+        "id": "nanopore-sensing",
+        "title": "Nanopore Sensing",
+        "label": "纳米孔传感",
+        "description": "利用工程化纳米孔研究蛋白质修饰、糖链及药物–DNA 相互作用的分子识别方法。"
+      },
+      {
+        "id": "single-molecule-manipulation",
+        "title": "Single-Molecule Manipulation",
+        "label": "单分子操控",
+        "description": "研制固态纳米孔器件，通过分子乒乓操控与重复捕获，对同一分子进行多次测量。"
+      },
+      {
+        "id": "mechanistic-studies",
+        "title": "Mechanistic Studies",
+        "label": "机制研究",
+        "description": "结合分子动力学与多尺度计算，研究孔道相互作用、分子输运和离子电流信号之间的联系。"
+      }
+    ]
+  }
+}

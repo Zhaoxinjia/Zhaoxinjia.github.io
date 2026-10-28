@@ -7,6 +7,7 @@
     "dev": "node scripts/dev.js",
     "build": "tools/hugo.exe --gc --minify",
     "preview": "tools/hugo.exe server --port 7100 --bind 0.0.0.0 --disableFastRender",
-    "deploy": "node scripts/deploy.js"
+    "deploy": "node scripts/deploy.js",
+    "check": "node scripts/check-site.cjs"
   }
 }

@@ -9,8 +9,7 @@ draft: false
 
 ## 主要成果
 
-- 发表 SCI 论文 **24** 篇，被引 **350 余次**，**H 指数 12**（[Google Scholar](https://scholar.google.com/citations?user=gJ9BsdAAAAAJ)）
-- 以第一作者（含共同第一）或通讯作者发表代表性论文 **8** 篇，包括 *Nat. Commun.*、*Trends Anal. Chem.*、*ACS Nano*、*Nano Lett.*、*Nanoscale* 等
+- 已发表 SCI 论文 **24** 篇。
 - 申请国家发明专利 **5** 项，其中 **3** 项已获授权
 - 获 **2025 年分析测试科学奖一等奖**（第七完成人）
 - 获辽宁省**兴辽英才博士后储备计划**（2024）支持
