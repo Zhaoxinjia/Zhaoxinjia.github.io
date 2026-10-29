@@ -2,34 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zhaoxinjia.github.io/zh/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhaoxinjia.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://zhaoxinjia.github.io/zh/categories/"
-                />
-  </url><url>
-    <loc>https://zhaoxinjia.github.io/zh/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhaoxinjia.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://zhaoxinjia.github.io/zh/tags/"
-                />
-  </url><url>
     <loc>https://zhaoxinjia.github.io/zh/about/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="https://zhaoxinjia.github.io/about/"
                 />
     <xhtml:link
@@ -41,7 +17,7 @@
     <loc>https://zhaoxinjia.github.io/zh/contact/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="https://zhaoxinjia.github.io/contact/"
                 />
     <xhtml:link
@@ -53,7 +29,7 @@
     <loc>https://zhaoxinjia.github.io/zh/publications/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="https://zhaoxinjia.github.io/publications/"
                 />
     <xhtml:link
@@ -65,7 +41,7 @@
     <loc>https://zhaoxinjia.github.io/zh/research/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="https://zhaoxinjia.github.io/research/"
                 />
     <xhtml:link
@@ -77,7 +53,7 @@
     <loc>https://zhaoxinjia.github.io/zh/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="https://zhaoxinjia.github.io/"
                 />
     <xhtml:link
