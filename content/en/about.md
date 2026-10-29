@@ -3,15 +3,15 @@ title: "About"
 draft: false
 ---
 
-I am an Assistant Researcher at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu), and my B.S. in physics from Jilin University.
+I am a Research Assistant Professor at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu), and my B.S. in physics from Jilin University.
 
 My research lies at the intersection of **nanopore single-molecule sensing devices** and **biomedical analysis**. I work on molecular recognition with engineered nanopores, detection platform development, and mechanism studies, targeting protein post-translational modifications, glycan structures, and drug–nucleic acid interactions — aiming to provide new analytical methods and technology support for disease-related biomolecular characterization and drug development.
 
 ## Highlights
 
-- **24** published SCI papers.
+- **24** peer-reviewed papers, **7** of them as first or corresponding author (including co-first authorship).
 - **5** Chinese invention patent applications, **3** granted
-- First Prize of the 2025 Science and Technology Award for Analysis and Testing (7th contributor)
+- First Prize, Science and Technology Award of the China Association for Instrumental Analysis (CAIA), 2025
 - Supported by the Liaoning "Xingliao Yingcai" Postdoctoral Reserve Program (2024)
 - Committee member, Cardiovascular Disease Medical-Engineering Integration Committee, Liaoning Society for Cell Biology
 
@@ -26,5 +26,5 @@ My research lies at the intersection of **nanopore single-molecule sensing devic
 
 | Period | Position | Institution |
 |---|---|---|
-| 2023.02 – present | Assistant Researcher | Dalian Institute of Chemical Physics, CAS (Guangyan Qing group) |
+| 2023.02 – present | Research Assistant Professor | Dalian Institute of Chemical Physics, CAS (Guangyan Qing group) |
 | 2021.01 – 2023.02 | Postdoctoral Researcher | Institute of Physics, CAS (with Prof. Xinghua Lu) |

@@ -1,6 +1,8 @@
 # 赵新佳个人学术网站
 
-Hugo 0.166.0 extended + PaperMod，默认英文，中文位于 /zh/。保留原主题，定制均在项目级目录。
+[访问网站](https://zhaoxinjia.github.io/) · [中文版](https://zhaoxinjia.github.io/zh/)
+
+Hugo 0.166.0 extended + PaperMod，默认英文，中文位于 /zh/。定制均在项目级目录，不修改主题源码。
 
 ## 本地构建与检查
 
@@ -10,11 +12,10 @@ npm run check
 npm run dev -- --host 127.0.0.1
 ```
 
-Hugo 使用 tools/hugo.exe，无需全局安装。构建输出 public/，不提交。
-scripts/check-browser.cjs 是可选浏览器验证工具，需要环境中可用的 Playwright 和 Edge；不属于站点运行依赖。
-可通过 PLAYWRIGHT_CHANNEL 改选已安装的浏览器通道。
+构建使用 tools/hugo.exe，输出 public/，不提交构建目录。可直接执行 tools/hugo.exe --gc --minify --cleanDestinationDir。
+scripts/check-browser.cjs 为可选浏览器检查，需要环境中的 Playwright 与 Edge，不属于站点运行依赖。
 
-## 内容与路径
+## 页面与维护
 
 | 页面 | 英文 | 中文 |
 |---|---|---|
@@ -24,22 +25,26 @@ scripts/check-browser.cjs 是可选浏览器验证工具，需要环境中可用
 | 论文 | /publications/ | /zh/publications/ |
 | 联系 | /contact/ | /zh/contact/ |
 
-- 双语正文：content/en/ 与 content/zh/。
-- 首页双语文案与研究入口：data/home.json。方向文案来自对应 research.md；三个稳定锚点在研究页标题中维护。
-- 全部引文：data/publications.json。ID 稳定且不复用；status 仅使用 published、preprint、under_review；citation.en / citation.zh 保留双语原始引文 HTML，仅维护者可编辑。
-- 更新论文状态必须以作者确认或可核验出版记录为依据，不按年份、期刊名或是否有 DOI 推断。
-- 代表作：data/selected_publications.json。confirmed_ids 决定首页展示与顺序；目前为空。pending_ids 是待确认池，不会展示为代表作。确认后从 pending_ids 移除对应 ID；仅 published 记录可进入 confirmed_ids。
-- 待确认完整清单与原始统计：[docs/CONTENT-REVIEW.md](docs/CONTENT-REVIEW.md)。
-- 头像和历史图片：static/img/；CV：static/cv/Xinjia_Zhao_CV.pdf。
-- 配色、响应式和焦点样式：assets/css/extended/custom.css。
-- 主题升级后复核 layouts/baseof.html、layouts/_partials/head.html 及其他项目级覆盖，不直接改 themes/。
+- 双语正文：content/en/ 与 content/zh/，必须同步维护。
+- 首页文案与研究入口：data/home.json。
+- 论文：data/publications.json，使用稳定 ID；状态为 published、preprint、under_review。citation.en/zh 保留原始完整引文，结构化 title/authors/year/journal/doi 用于列表展示，更新时同步维护。
+- self_role 为 first、cofirst、corresponding 或空字符串；当前已发表 24 篇，其中 6 篇第一/共同第一、1 篇共同通讯。不要把在审稿件计入已发表数字。
+- short_authors 控制简短作者显示，必须保留本人姓名；完整作者可在页面展开。
+- 代表作：data/selected_publications.json 的 confirmed_ids，顺序即首页展示顺序；summary.en/zh 在论文记录中维护。
+- 动态：data/news.json，日期使用真实上线日期，附对应 publication ID，最多展示 5 条。
+- CV：static/cv/Xinjia_Zhao_CV.pdf，沿用原有中文文件，主页与导航提供入口；请作者独立维护 PDF 内容。
+- 头像：static/img/portrait-cutout.webp，PNG 兜底；原始 photo.jpg 保留。logo 使用 64/128 px 版本。
+- 科研示意图：static/img/research-*.svg，为概念图；图注由 layouts/shortcodes/research-figure.html 输出，不代表实验数据或 MD 结果。
+- 分享图：static/img/og-cover.png（1200×630）。
+- 深浅色与移动端样式：assets/css/extended/custom.css；默认深色，可切换浅色。
+- schema、OpenGraph、Twitter 与首页标题：layouts/_partials/ 内项目级覆盖。
+- 主题升级后复核项目级覆盖。版权年份已由原主题 now.Year 自动生成。
+- 详细变更和限制见 docs/PHASE2-REPORT.md。历史记录见 docs/PHASE1-REPORT.md。
 
-## 部署边界
+## 部署
 
-原有源码分支 main；仓库存在 gh-pages，原 README 与 scripts/deploy.js 指向该分支发布。
-未查询 GitHub Pages 后台设置，因此发布源以实际仓库设置为准。没有 GitHub Actions 工作流。
-本阶段仅本地分支 codex/academic-homepage-phase1，不推送、不上线。
+GitHub Pages 发布源已通过成功的 Pages 工作流确认使用 gh-pages。main 保存源码；在独立工作分支完成修改后再合入。
+发布时在独立目录检出 gh-pages，替换构建产物，普通快进推送，不强制覆盖历史；.nojekyll 必须保留。
 
-**不要把 npm run deploy 当作预览命令。** 现有脚本会强推 gh-pages 并尝试提交和推送 main。
-它使用 git rev-parse 检测 public/ 的仓库，可能向上匹配源码仓库；首次部署前应单独审核并修正隔离检查。
-本阶段未执行或修改该脚本。未来部署需另行明确授权。
+**不要直接运行旧 npm run deploy。** scripts/deploy.js 的 public/ Git 隔离检测可能向上匹配源码仓库，且会强推发布分支。
+当前使用独立发布目录；qa/ 下的截图、工具与发布目录均被 Git 忽略，不进入源码或网站。

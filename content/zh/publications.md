@@ -4,11 +4,11 @@ description: "赵新佳的论文与稿件，按已发表、预印本与在审状
 draft: false
 ---
 
-**已发表 SCI 论文 24 篇**（不含在审稿件）。
+**已发表同行评议论文 24 篇，其中第一作者（含共同第一）或通讯作者论文 7 篇**（不含在审稿件）。
 
 [Google Scholar](https://scholar.google.com/citations?user=gJ9BsdAAAAAJ) · [ResearchGate](https://www.researchgate.net/profile/Xinjia-Zhao)
 
-`#` 共同第一作者；`*` 通讯作者。
+`#` 共同第一作者；`*` 通讯作者。**●** 标记赵新佳为第一作者、共同第一作者或通讯作者的论文。展开条目可查看完整作者名单。
 
 {{< publication-list >}}
 

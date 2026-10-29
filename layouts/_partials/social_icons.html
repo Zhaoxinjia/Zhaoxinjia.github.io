@@ -1,0 +1,8 @@
+{{ $zh := eq site.Language.Lang "zh" }}
+<div class="social-icons social-text" aria-label="{{ if $zh }}学术联系{{ else }}Academic profiles{{ end }}">
+{{ range site.Params.socialIcons }}
+{{ $label := index (dict "email" "Email" "googlescholar" "Google Scholar" "orcid" "ORCID" "researchgate" "ResearchGate") .name }}
+{{ if $zh }}{{ if eq .name "email" }}{{ $label = "邮箱" }}{{ else if eq .name "googlescholar" }}{{ $label = "谷歌学术" }}{{ end }}{{ end }}
+<a href="{{ .url | safeURL }}" title="{{ $label }}" aria-label="{{ $label }}"{{ if ne .name "email" }} rel="me noopener"{{ end }}>{{ $label }}</a>
+{{ end }}
+</div>

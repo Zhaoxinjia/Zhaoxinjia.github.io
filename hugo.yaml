@@ -7,6 +7,7 @@ defaultContentLanguageInSubdir: false
 hasCJKLanguage: true
 
 enableRobotsTXT: true
+disableKinds: [taxonomy, term, RSS]
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -22,11 +23,11 @@ markup:
 languages:
   en:
     label: "English"
-    locale: "en"
+    locale: "en-US"
     weight: 1
     contentDir: content/en
     params:
-      subtitle: "Assistant Researcher, Dalian Institute of Chemical Physics, CAS"
+      subtitle: "Research Assistant Professor, Dalian Institute of Chemical Physics, CAS"
       profileMode:
         enabled: true
         title: "Xinjia Zhao"
@@ -107,7 +108,7 @@ params:
   author: "Xinjia Zhao"
 
   defaultTheme: dark
-  disableThemeToggle: true
+  disableThemeToggle: false
   displayFullLangName: true
 
   ShowReadingTime: false

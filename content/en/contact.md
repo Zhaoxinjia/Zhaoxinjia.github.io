@@ -15,3 +15,7 @@ I welcome academic exchanges and collaborations on nanopore sensing, single-mole
 Dalian Institute of Chemical Physics, Chinese Academy of Sciences
 
 457 Zhongshan Road, Shahekou District, Dalian, Liaoning, China
+
+## Curriculum Vitae
+
+[CV (PDF, Chinese)](/cv/Xinjia_Zhao_CV.pdf)

@@ -1,14 +1,13 @@
 {
   "en": {
-    "role": "Assistant Researcher",
+    "role": "Research Assistant Professor",
     "affiliation": "Dalian Institute of Chemical Physics, Chinese Academy of Sciences",
     "intro": "Nanopore single-molecule sensing, bioanalysis, and medical engineering.",
     "summary": "Developing molecular recognition methods and actively controllable, repeatedly readable single-molecule analysis platforms.",
     "research": "Research directions",
     "publications": "All publications",
     "about": "About me",
-    "selected": "Selected Publications",
-    "pending": "A selection of publications will be added here. The full list is available below, organized by publication status.",
+    "selected": "Selected publications",
     "directions": [
       {
         "id": "nanopore-sensing",
@@ -35,8 +34,7 @@
     "research": "研究方向",
     "publications": "全部论文与稿件",
     "about": "关于我",
-    "selected": "代表论文 · Selected Publications",
-    "pending": "代表论文选目将于确认后补充。完整论文与稿件列表已按出版状态分类，可通过下方入口查看。",
+    "selected": "代表性论文",
     "directions": [
       {
         "id": "nanopore-sensing",

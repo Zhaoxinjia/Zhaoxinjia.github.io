@@ -1,18 +1,19 @@
 {
-  "confirmed_ids": [],
-  "pending_ids": [
+  "confirmed_ids": [
+    "pub-22",
     "pub-24",
     "pub-23",
-    "pub-22",
+    "pub-19",
+    "pub-13",
+    "pub-15"
+  ],
+  "pending_ids": [
     "pub-21",
     "pub-20",
-    "pub-19",
     "pub-18",
     "pub-17",
     "pub-16",
-    "pub-15",
     "pub-14",
-    "pub-13",
     "pub-12",
     "pub-11",
     "pub-10",

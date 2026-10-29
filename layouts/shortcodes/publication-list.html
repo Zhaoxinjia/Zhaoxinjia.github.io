@@ -1,15 +1,15 @@
-{{ $lang := .Page.Lang }}
-{{ $zh := eq $lang "zh" }}
+{{ $lang := .Page.Lang }}{{ $zh := eq $lang "zh" }}
 {{ range slice "published" "preprint" "under_review" }}
-  {{ $status := . }}
-  {{ $items := where hugo.Data.publications "status" $status }}
-  <section class="publication-group" aria-labelledby="{{ $status }}">
-    <h2 id="{{ $status }}">{{ if eq $status "published" }}{{ if $zh }}已发表论文{{ else }}Published papers{{ end }}{{ else if eq $status "preprint" }}{{ if $zh }}预印本{{ else }}Preprints{{ end }}{{ else }}{{ if $zh }}在审稿件{{ else }}Manuscripts under review{{ end }}{{ end }}</h2>
-    {{ if eq $status "under_review" }}<p class="status-note">{{ if $zh }}以下为在审稿件，尚未接收或发表。期刊名称沿用原记录中的投稿信息。{{ else }}These manuscripts are under review, not accepted or published. Journal names retain the submission information in the source record.{{ end }}</p>{{ end }}
-    {{ if $items }}
-    <ol class="publication-list"{{ if eq $status "published" }} reversed{{ end }}>
-      {{ range $items }}<li id="{{ .id }}">{{ index .citation $lang | safeHTML }}</li>{{ end }}
-    </ol>
-    {{ else }}<p>{{ if $zh }}本站尚未列出此类记录。{{ else }}No records in this category are currently listed on this site.{{ end }}</p>{{ end }}
-  </section>
-{{ end }}
+{{ $status := . }}{{ $items := where hugo.Data.publications "status" $status }}
+{{ with $items }}
+<section class="publication-group" aria-labelledby="{{ $status }}">
+<h2 id="{{ $status }}">{{ if eq $status "published" }}{{ if $zh }}已发表论文{{ else }}Published papers{{ end }}{{ else if eq $status "preprint" }}{{ if $zh }}预印本{{ else }}Preprints{{ end }}{{ else }}{{ if $zh }}在审稿件{{ else }}Manuscripts under review{{ end }}{{ end }}</h2>
+{{ if eq $status "published" }}
+{{ $years := slice }}{{ range . }}{{ $years = $years | append .year }}{{ end }}
+{{ range sort (uniq $years) "value" "desc" }}{{ $year := . }}<h3 class="publication-year">{{ . }}</h3><ul class="publication-list">
+{{ range where $items "year" $year }}{{ partial "publication-entry.html" (dict "paper" . "lang" $lang) }}{{ end }}
+</ul>{{ end }}
+{{ else }}
+{{ if eq $status "under_review" }}<p class="status-note">{{ if $zh }}以下稿件仍在审稿中，尚未接收或发表。期刊名称为原记录中的投稿信息。{{ else }}The following manuscript remains under review and has not been accepted or published. The journal name records the submission venue.{{ end }}</p>{{ end }}
+<ul class="publication-list">{{ range . }}{{ partial "publication-entry.html" (dict "paper" . "lang" $lang) }}{{ end }}</ul>
+{{ end }}</section>{{ end }}{{ end }}

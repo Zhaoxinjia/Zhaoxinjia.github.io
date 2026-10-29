@@ -1,48 +1,36 @@
 {{ define "main" }}
-{{ $copy := index hugo.Data.home .Lang }}
+{{ $copy := index hugo.Data.home .Lang }}{{ $lang := .Lang }}{{ $zh := eq $lang "zh" }}
 <section class="home-hero" aria-labelledby="hero-name">
-  <div class="hero-text">
-    <p class="eyebrow">{{ $copy.role }}</p>
-    <h1 id="hero-name">{{ site.Title }}</h1>
-    <p class="hero-affil">{{ $copy.affiliation }}</p>
-    <p class="hero-intro">{{ $copy.intro }}</p>
-    <p class="hero-summary">{{ $copy.summary }}</p>
-    <div class="hero-buttons">
-      <a class="hero-btn primary" href="{{ "research/" | relLangURL }}">{{ $copy.research }}</a>
-      <a class="hero-btn" href="{{ "about/" | relLangURL }}">{{ $copy.about }}</a>
-    </div>
-    <div class="home-social">{{ partial "social_icons.html" (dict) }}</div>
-  </div>
-  <img class="hero-photo" src="{{ "img/photo.jpg" | relURL }}" alt="{{ site.Title }}" width="240" height="240" fetchpriority="high">
+<div class="hero-text">
+<p class="eyebrow">{{ $copy.role }}</p><h1 id="hero-name">{{ site.Title }}</h1>
+<p class="hero-affil">{{ $copy.affiliation }}</p>
+<p class="hero-intro">{{ $copy.intro }}</p><p class="hero-summary">{{ $copy.summary }}</p>
+<div class="hero-buttons"><a class="hero-btn primary" href="#selected">{{ if $zh }}代表论文{{ else }}Selected papers{{ end }}</a><a class="hero-btn" href="{{ "cv/Xinjia_Zhao_CV.pdf" | relURL }}" download="Xinjia-Zhao-CV.pdf">{{ if $zh }}简历（PDF）{{ else }}CV (PDF){{ end }}</a></div>
+<div class="home-social">{{ partial "social_icons.html" (dict) }}</div>
+</div>
+<picture class="hero-portrait"><source media="(max-width: 600px)" srcset="{{ "img/portrait-240.webp" | relURL }}" type="image/webp"><source srcset="{{ "img/portrait-cutout.webp" | relURL }}" type="image/webp"><img class="hero-photo" src="{{ "img/portrait-fallback.png" | relURL }}" alt="{{ if $zh }}赵新佳肖像{{ else }}Portrait of Xinjia Zhao{{ end }}" width="240" height="240" fetchpriority="high"></picture>
 </section>
 <section class="home-section" aria-labelledby="research-title">
-  <h2 id="research-title">{{ $copy.research }}</h2>
-  <div class="research-grid">
-    {{ range $copy.directions }}
-    <a class="research-card" href="{{ "research/" | relLangURL }}#{{ .id }}">
-      <h3 lang="en">{{ .title }}</h3>
-      {{ with .label }}<p class="direction-label">{{ . }}</p>{{ end }}
-      <p>{{ .description }}</p>
-      <span class="card-arrow" aria-hidden="true">↗</span>
-    </a>
-    {{ end }}
-  </div>
+<h2 id="research-title">{{ $copy.research }}</h2><div class="research-grid">
+{{ range $copy.directions }}
+<a class="research-card" href="{{ "research/" | relLangURL }}#{{ .id }}">
+{{ if $zh }}<h3>{{ .label }}</h3><p class="direction-label" lang="en">{{ .title }}</p>{{ else }}<h3>{{ .title }}</h3>{{ end }}
+<p>{{ .description }}</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+{{ end }}</div></section>
+<section class="home-section selected-section" id="selected" aria-labelledby="selected-title">
+<h2 id="selected-title">{{ $copy.selected }}</h2>
+<div class="selected-list">
+{{ range hugo.Data.selected_publications.confirmed_ids }}
+{{ $matches := where hugo.Data.publications "id" . }}{{ if ne (len $matches) 1 }}{{ errorf "Invalid selected ID %s" . }}{{ end }}
+{{ range $matches }}{{ if ne .status "published" }}{{ errorf "Selected ID %s is not published" .id }}{{ end }}
+<article class="selected-paper"><div class="selected-meta"><span>{{ .year }}</span><span>{{ .journal }}</span><span class="paper-kind">{{ if eq .kind "review" }}{{ if $zh }}综述{{ else }}Review{{ end }}{{ else }}{{ if $zh }}研究论文{{ else }}Research article{{ end }}{{ end }}</span></div>
+<div><h3><a href="https://doi.org/{{ .doi }}">{{ .title }}</a></h3><p>{{ index .summary $lang }}</p></div></article>
+{{ end }}{{ end }}
+</div><a class="text-link" href="{{ "publications/" | relLangURL }}">{{ $copy.publications }} →</a>
 </section>
-<section class="home-section selected-section" aria-labelledby="selected-title">
-  <h2 id="selected-title">{{ $copy.selected }}</h2>
-  {{ $lang := .Lang }}
-  {{ with hugo.Data.selected_publications.confirmed_ids }}
-  <ol class="publication-list">
-    {{ range . }}
-      {{ $matches := where hugo.Data.publications "id" . }}
-      {{ if ne (len $matches) 1 }}{{ errorf "Unknown selected publication ID: %s" . }}{{ end }}
-      {{ range $matches }}
-        {{ if ne .status "published" }}{{ errorf "Selected publication %s must be published" .id }}{{ end }}
-        <li>{{ index .citation $lang | safeHTML }}</li>
-      {{ end }}
-    {{ end }}
-  </ol>
-  {{ else }}<p class="selection-note">{{ $copy.pending }}</p>{{ end }}
-  <a class="text-link" href="{{ "publications/" | relLangURL }}">{{ $copy.publications }} <span aria-hidden="true">→</span></a>
-</section>
+{{ with hugo.Data.news }}
+<section class="home-section" aria-labelledby="news-title"><h2 id="news-title">{{ if $zh }}动态{{ else }}News{{ end }}</h2><ul class="news-list">
+{{ range first 5 (sort . "date" "desc") }}{{ $p := index (where hugo.Data.publications "id" .publication) 0 }}
+<li><time datetime="{{ .date }}">{{ dateFormat "2006.01" .date }}</time><span><a href="https://doi.org/{{ $p.doi }}">{{ index . $lang }}</a></span></li>
+{{ end }}</ul></section>{{ end }}
 {{ end }}

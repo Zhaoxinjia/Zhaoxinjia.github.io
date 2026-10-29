@@ -31,7 +31,7 @@ for(const lang of ['en','zh'])for(const slug of ['', 'about','research','publica
  assert(tags.some(t=>t.a.rel==='canonical'&&t.a.href===base+route),route+' canonical');
  assert(tags.some(t=>t.a.name==='description'&&t.a.content.length>10),route+' description');
  const target=(lang==='en'?'/zh/':'/')+(slug?slug+'/':'');
- assert(tags.some(t=>t.tag.startsWith('<a ')&&t.a.hreflang===(lang==='en'?'zh':'en')&&t.a.href===target),route+' corresponding translation');
+ assert(tags.some(t=>t.tag.startsWith('<a ')&&t.a.hreflang===(lang==='en'?'zh-CN':'en-US')&&t.a.href===target),route+' corresponding translation');
  if(slug)assert(tags.some(t=>t.a['aria-current']==='page'&&t.a.href===route),route+' active nav');
  for(const t of tags.filter(t=>t.tag.startsWith('<img ')))assert('alt' in t.a,route+' image alt');
  if(slug==='publications')assert.equal((html.match(/id=["']?pub-\d+/g)||[]).length,25);

@@ -89,3 +89,90 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Phase two: typography, readable publication entries and both color schemes. */
+:root[data-theme="light"] {
+ --theme:#F6F8FB; --entry:#FFFFFF; --primary:#122238; --content:#40516A;
+ --secondary:#40516A; --accent:#146572; --border:#CAD4E0; --tertiary:#CAD4E0;
+ --code-bg:#E8EEF5; --code-block-bg:#E8EEF5; color-scheme:light;
+}
+.header-nav { flex-wrap:nowrap; gap:20px; padding-top:14px; padding-bottom:14px; }
+#menu { margin-inline-start:auto; gap:4px 20px; flex-wrap:nowrap; }
+.header-tools { display:flex; align-items:center; gap:12px; flex-shrink:0; }
+.header-tools a, #theme-toggle { min-width:44px; min-height:44px; display:inline-flex; align-items:center; justify-content:center; font-size:15px; }
+.header-tools a { color:var(--accent); }
+#theme-toggle { padding:10px; border:1px solid var(--border); border-radius:6px; background:var(--entry); cursor:pointer; }
+.header-nav .site-brand { line-height:1.4; }
+.site-brand picture { display:flex; }
+.hero-portrait { justify-self:end; display:block; }
+.hero-photo { display:block; border:0; border-radius:0; width:240px; height:240px; object-fit:contain; }
+.home-social .social-text { flex-wrap:wrap; gap:0 18px; }
+.home-social .social-text a { width:auto; height:auto; min-height:44px; min-width:44px; padding:8px 0; justify-content:start; font-size:15px; color:var(--accent); text-decoration:underline; }
+.selected-paper { display:grid; grid-template-columns:170px minmax(0,1fr); gap:24px; padding:24px 0; border-top:1px solid var(--border); }
+.selected-paper:first-child { border-top:0; padding-top:0; }
+.selected-meta { display:flex; flex-direction:column; align-items:start; gap:4px; font-size:15px; color:var(--secondary); }
+.selected-meta>span:first-child { color:var(--accent); font-weight:650; }
+.paper-kind { font-size:13px; padding:2px 8px; margin-top:6px; border:1px solid var(--border); border-radius:4px; }
+.selected-paper h3 { font-size:20px; line-height:1.5; margin:0 0 10px; }
+.selected-paper h3 a:hover { text-decoration:underline; }
+.selected-paper p { font-size:16px; }
+.news-list { list-style:none; margin:0; padding:0; }
+.news-list li { display:grid; grid-template-columns:90px minmax(0,1fr); gap:24px; margin-bottom:18px; font-size:16px; }
+.news-list time { color:var(--accent); font-variant-numeric:tabular-nums; }
+.news-list a { text-decoration:underline; }
+.post-content .publication-list { list-style:none; padding:0; }
+.post-content .publication-entry { padding:0 0 24px; margin:0 0 24px; border-bottom:1px solid var(--border); }
+.publication-entry h4 { margin:0 0 8px; font-size:18px; line-height:1.6; }
+.publication-entry h4 a { color:var(--primary); box-shadow:none; }
+.publication-entry h4 a:hover { color:var(--accent); text-decoration:underline; }
+.publication-entry .paper-authors, .publication-entry .paper-details { margin:6px 0; font-size:15px; }
+.lead-marker { color:var(--accent); font-size:12px; }
+.post-content .publication-year { color:var(--accent); border-bottom:1px solid var(--border); padding-bottom:10px; }
+.full-citation { margin-top:12px; font-size:14px; overflow-wrap:anywhere; }
+.full-citation summary { display:list-item; cursor:pointer; min-height:44px; padding:8px 0; color:var(--accent); }
+.post-content .full-citation a { box-shadow:none; }
+.post-content table { table-layout:auto; }
+.post-content th:first-child,.post-content td:first-child { min-width:155px; white-space:nowrap; }
+.research-figure { margin:28px 0; padding:20px; background:var(--entry); border:1px solid var(--border); border-radius:8px; }
+.research-figure img { width:100%; height:auto; margin:0; }
+.research-figure figcaption { margin-top:12px; font-size:14px; color:var(--secondary); }
+.related-papers { margin:16px 0 28px; padding-inline-start:20px; }
+.not-found-page { padding:80px 0; }
+.not-found-page h1 { font-size:72px; margin-bottom:24px; }
+.not-found-page p { margin:12px 0; }
+.not-found-page a { color:var(--accent); text-decoration:underline; display:inline-block; padding:10px 0; }
+.footer a { display:inline-block; min-height:32px; padding:8px 0; }
+@media (max-width:900px) {
+ .header-nav { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 12px; padding-top:10px; padding-bottom:8px; }
+ .header-nav .site-brand { grid-column:1; grid-row:1; }
+ .header-tools { grid-column:2; grid-row:1; }
+ #menu { grid-column:1 / -1; grid-row:2; width:100%; margin:0; flex-wrap:nowrap; gap:0 24px; overflow-x:auto; scrollbar-width:thin; }
+ #menu a { white-space:nowrap; }
+ .hero-photo { width:180px; height:180px; }
+}
+@media (max-width:600px) {
+ .header-nav { padding-inline:20px; }
+ .header-tools { gap:6px; }
+ .header-nav .site-brand { font-size:18px; gap:8px; }
+ #menu { gap:0 24px; }
+ .home-hero { position:relative; padding-top:32px; }
+ .hero-portrait { grid-row:1; justify-self:start; }
+ .hero-photo { width:120px; height:120px; }
+ .selected-paper { grid-template-columns:1fr; gap:12px; }
+ .selected-meta { flex-direction:row; flex-wrap:wrap; align-items:center; gap:8px 14px; }
+ .paper-kind { margin-top:0; }
+ .selected-paper h3 { font-size:18px; }
+ .news-list li { grid-template-columns:70px minmax(0,1fr); gap:12px; }
+ .research-figure { padding:12px; }
+}
+@media (max-width:360px) { .site-brand picture { display:none; } .header-tools { gap:2px; } }
+@media print {
+ :root, :root[data-theme="dark"] { --theme:#fff;--entry:#fff;--primary:#000;--content:#222;--secondary:#333;--accent:#145363;--border:#bbb;color-scheme:light; }
+ .header,.footer,.top-link,.hero-buttons,.home-social { display:none; }
+ .main,.post-single { max-width:none; padding:0; margin:0; }
+ details { display:block; } details>p { display:block; }
+}
+
+.publication-entry h3 { margin:0 0 8px; font-size:18px; line-height:1.6; }
+.publication-entry h3 a { color:var(--primary); box-shadow:none; }
+.publication-entry h3 a:hover { color:var(--accent); text-decoration:underline; }
