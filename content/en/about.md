@@ -5,7 +5,7 @@ description: "Xinjia Zhao: nanopore engineering, single-molecule sensing, resear
 draft: false
 ---
 
-I am a Research Assistant Professor at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu), and my B.S. in physics from Jilin University.
+I am a Research Assistant Professor at the **Dalian Institute of Chemical Physics (DICP), Chinese Academy of Sciences**, working in the group of Prof. Guangyan Qing. I received my Ph.D. in condensed matter physics from the Institute of Physics, CAS (advisor: Prof. Xinghua Lu), and my B.S. in physics from Jilin University, School of Physics.
 
 My research focuses on **nanopore single-molecule sensing devices and biomedical analytical methods**. It includes PIToN-guided engineering of aerolysin pores for protein citrullination, molecular recognition of glycans and cisplatin–DNA adducts, and actively controlled platforms for repeated measurements of the same molecule. I combine molecular dynamics with finite-element simulation to interpret pore–molecule interactions and ionic-current signals.
 
@@ -22,7 +22,7 @@ My research focuses on **nanopore single-molecule sensing devices and biomedical
 | Period | Degree | Institution |
 |---|---|---|
 | Sep 2015 – Jan 2021 | Ph.D., Condensed Matter Physics | Institute of Physics, CAS (State Key Laboratory of Surface Physics), advisor: Prof. Xinghua Lu |
-| Sep 2011 – Jul 2015 | B.S., Physics | Jilin University |
+| Sep 2011 – Jul 2015 | B.S., Physics | Jilin University, School of Physics |
 
 ## Experience
 

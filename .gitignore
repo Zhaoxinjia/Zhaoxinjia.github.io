@@ -9,3 +9,6 @@ Thumbs.db
 
 # Local visual QA
 qa/
+
+# Local document exports
+output/
