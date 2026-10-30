@@ -1,6 +1,6 @@
 ---
 title: "Research"
-description: "PIToN-guided nanopore engineering, repeated single-molecule measurements, and molecular dynamics with finite-element simulation."
+description: "PIToN-guided nanopore engineering, repeated single-molecule measurements, and two independent molecular-dynamics and finite-element modules."
 draft: false
 ---
 
@@ -8,20 +8,22 @@ My research focuses on **nanopore single-molecule sensing devices and biomedical
 
 ## Research Directions
 
-### 1. PIToN-guided nanopore engineering and molecular recognition {#nanopore-sensing}
+<a id="nanopore-sensing"></a>
 
-The **PIToN model** guides aerolysin pore engineering for **sub-dalton single-molecule discrimination of protein citrullination**. This work is accepted in *Nature Communications* and is listed separately from published papers. Related molecular-recognition methods address **neutral glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts**, supporting analysis of protein modifications, glycan structures, and drug–nucleic acid interactions.
+### 1. Nanopore molecular recognition {#molecular-recognition}
+
+The **PIToN model** guides aerolysin pore engineering for **sub-dalton single-molecule discrimination of protein citrullination** (accepted, *Nature Communications*). The same recognition framework underpins assays for neutral glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts, supporting protein-modification analysis, glycan structure determination, and drug–nucleic acid studies.
 
 {{< research-figure "recognition" >}}
 
-### 2. Nanopore devices and single-molecule manipulation platforms {#single-molecule-manipulation}
+### 2. Single-molecule manipulation {#single-molecule-manipulation}
 
 We develop core solid-state nanopore detection modules, low-current ionic-recording systems, and **molecular ping-pong control with FPGA-driven instrumentation**. Repeated capture enables multiple measurements of the same molecule, reducing the random variation of single translocation events and improving the consistency of molecular characterization.
 
 {{< research-figure "manipulation" >}}
 
-### 3. Mechanisms resolved by molecular dynamics and finite-element simulation {#mechanistic-studies}
+### 3. Mechanism and theory: two independent computational modules {#mechanistic-studies}
 
-Combining **molecular dynamics and finite-element simulation**, we analyze pore-interface interactions, molecular transport, and ionic-current signatures. These approaches guide pore design and detection-condition optimization, connecting mechanism studies with molecular recognition and single-molecule measurement.
+Two independent modules constrain the same measurement. **Molecular dynamics** resolves the local chemistry of the pore—confinement, electrostatics, hydrogen bonding, van der Waals and hydrophobic contacts. **Finite-element (Poisson–Nernst–Planck) simulation** resolves transport and the electric field in the channel. Neither is a preprocessing step for the other; both are compared against measured ΔI and Δt, and both feed back into pore design.
 
 {{< research-figure "mechanism" >}}

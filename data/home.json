@@ -10,19 +10,19 @@
     "selected": "Selected publications",
     "directions": [
       {
-        "id": "nanopore-sensing",
-        "title": "Nanopore Sensing",
-        "description": "PIToN-guided aerolysin engineering for protein citrullination; nanopore assays for glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts."
+        "id": "molecular-recognition",
+        "title": "Nanopore molecular recognition",
+        "description": "PIToN-guided pore engineering for sub-dalton citrullination sensing; recognition of glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts."
       },
       {
         "id": "single-molecule-manipulation",
-        "title": "Single-Molecule Manipulation",
+        "title": "Single-molecule manipulation",
         "description": "Solid-state nanopore devices, molecular ping-pong control, and repeated capture for multiple measurements of the same molecule."
       },
       {
         "id": "mechanistic-studies",
-        "title": "Mechanistic Studies",
-        "description": "Molecular dynamics and finite-element simulation to interpret pore–molecule interactions, molecular transport, and ionic-current signals."
+        "title": "Mechanism and theory",
+        "description": "Two independent modules—molecular dynamics and finite-element simulation—interpret local pore chemistry, transport, and ionic-current signatures."
       }
     ]
   },
@@ -37,22 +37,22 @@
     "selected": "代表性论文",
     "directions": [
       {
-        "id": "nanopore-sensing",
-        "title": "Nanopore Sensing",
-        "label": "纳米孔传感",
+        "id": "molecular-recognition",
+        "title": "Nanopore molecular recognition",
+        "label": "纳米孔分子识别",
         "description": "以 PIToN 模型指导瓜氨酸化检测的纳米孔工程化，并发展中性糖链、唾液酸连接异构体及顺铂–DNA 加合物分析。"
       },
       {
         "id": "single-molecule-manipulation",
-        "title": "Single-Molecule Manipulation",
+        "title": "Single-molecule manipulation",
         "label": "单分子操控",
         "description": "研制固态纳米孔器件，通过分子乒乓操控与重复捕获，对同一分子进行多次测量。"
       },
       {
         "id": "mechanistic-studies",
-        "title": "Mechanistic Studies",
-        "label": "机制研究",
-        "description": "结合分子动力学与有限元模拟，解析孔道–分子相互作用、分子输运及离子电流信号之间的关系。"
+        "title": "Mechanism and theory",
+        "label": "机制与理论",
+        "description": "分子动力学与有限元作为两套独立模块，分别解析孔道局部化学与输运电场，对照同一电流特征。"
       }
     ]
   }

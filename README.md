@@ -35,7 +35,7 @@ scripts/check-browser.cjs 为可选浏览器检查，需要环境中的 Playwrig
 - CV：static/cv/Xinjia_Zhao_CV_EN.pdf 与 Xinjia_Zhao_CV_ZH.pdf；data/cv.json 控制双语主页、导航的对应下载入口，联系页提供两版。旧 Xinjia_Zhao_CV.pdf 为中文版兼容地址，更新中文时须同步。PDF 由作者维护，原文件直接发布。
 - 专利：data/patents.json，granted 与 application 分开维护，保留各语言标题、发明人顺序、专利号/申请号及来源。
 - 头像：static/img/portrait-cutout.webp，PNG 兜底；原始 photo.jpg 保留。logo 使用 64/128 px 版本。
-- 科研示意图：static/img/research-*.svg，为概念图；图注由 layouts/shortcodes/research-figure.html 输出，不代表实验数据或 MD 结果。
+- 科研示意图：static/img/research-*.svg，中英各三张概念图。运行 node scripts/generate-research-diagrams.cjs 可重建；在生成脚本中修改图形后运行，不手工修改生成文件。图注和相关论文由 layouts/shortcodes/research-figure.html 维护。不代表实验数据或模拟结果；不要填入未确认的电压极性、次数和数值。
 - 分享图：static/img/og-cover.png（1200×630）。
 - 深浅色与移动端样式：assets/css/extended/custom.css；默认深色，可切换浅色。
 - schema、OpenGraph、Twitter 与首页标题：layouts/_partials/ 内项目级覆盖。

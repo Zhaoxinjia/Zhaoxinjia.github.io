@@ -105,8 +105,8 @@
     "self_role": "corresponding",
     "kind": "review",
     "summary": {
-      "en": "Nanopore signals can be difficult to interpret; this review examines how multiscale calculations explain molecular interactions and inform pore design and detection conditions.",
-      "zh": "纳米孔信号的机制解释存在挑战；这篇综述梳理多尺度计算如何解析分子相互作用，以及如何用于孔道设计与检测条件优化。"
+      "en": "Nanopore signals can be difficult to interpret; this review examines how theoretical calculations explain molecular interactions and inform pore design and detection conditions.",
+      "zh": "纳米孔信号的机制解释存在挑战；这篇综述梳理理论计算如何解析分子相互作用，以及如何用于孔道设计与检测条件优化。"
     },
     "short_authors": [
       "Dongdong Wang",

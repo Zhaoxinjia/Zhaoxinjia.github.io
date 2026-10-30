@@ -3,7 +3,7 @@
 {{ $status := . }}{{ $items := where hugo.Data.publications "status" $status }}
 {{ with $items }}
 <section class="publication-group" aria-labelledby="{{ $status }}">
-<h2 id="{{ $status }}">{{ if eq $status "published" }}{{ if $zh }}已发表论文{{ else }}Published papers{{ end }}{{ else if eq $status "in_press" }}{{ if $zh }}已接收待刊{{ else }}Accepted / in press{{ end }}{{ else if eq $status "preprint" }}{{ if $zh }}预印本{{ else }}Preprints{{ end }}{{ else }}{{ if $zh }}在审稿件{{ else }}Manuscripts under review{{ end }}{{ end }}</h2>
+<h2 id="{{ $status }}">{{ if eq $status "published" }}{{ if $zh }}已发表论文{{ else }}Published papers{{ end }}{{ else if eq $status "in_press" }}{{ if $zh }}已接收 · 待刊{{ else }}Accepted · in press{{ end }}{{ else if eq $status "preprint" }}{{ if $zh }}预印本{{ else }}Preprints{{ end }}{{ else }}{{ if $zh }}在审稿件{{ else }}Manuscripts under review{{ end }}{{ end }}</h2>
 {{ if eq $status "published" }}
 {{ $years := slice }}{{ range . }}{{ $years = $years | append .year }}{{ end }}
 {{ range sort (uniq $years) "value" "desc" }}{{ $year := . }}<h3 class="publication-year">{{ . }}</h3><ul class="publication-list">
