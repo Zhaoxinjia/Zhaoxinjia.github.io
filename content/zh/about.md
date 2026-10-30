@@ -1,5 +1,6 @@
 ---
 title: "关于我"
+bodyClass: about-page
 draft: false
 ---
 

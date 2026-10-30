@@ -188,10 +188,30 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .post-content .research-figure figcaption { margin-top:10px; font-size:13px; font-weight:400; color:var(--secondary); text-align:left; }
 .doi-text { overflow-wrap:anywhere; user-select:text; }
 .post-content .patent-orig { font-size:13px; color:var(--secondary); margin-top:4px; font-weight:400; }
+.research-frame { position:relative; }
+.diagram-hint { display:none; }
 @media(max-width:600px) {
  .home-social .social-icons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 16px; }
  .home-social .social-icons a { font-size:14px; min-height:44px; }
  .header-tools { gap:4px; }
  .header-tools .nav-cv { white-space:nowrap; font-size:13px; }
  .header-nav .site-brand { font-size:17px; }
+}
+
+/* V3: About tables become readable cards only on small screens. */
+@media(max-width:600px) {
+ .about-page .post-content table { display:block; width:100%; max-width:100%; overflow:visible; border:0; }
+ .about-page .post-content thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+ .about-page .post-content tbody, .about-page .post-content tbody tr, .about-page .post-content td { display:block; width:auto; }
+ .about-page .post-content tbody tr { padding:10px 14px; margin-bottom:14px; border:1px solid var(--border); border-radius:10px; }
+ .about-page .post-content td { min-width:0; padding:4px 0; border:0; line-height:1.6; word-break:normal; overflow-wrap:break-word; white-space:normal; }
+ .about-page .post-content td:first-child { min-width:0; white-space:normal; font-size:13px; color:var(--secondary); }
+ .about-page .post-content td:empty { display:none; }
+ .research-frame::after { content:""; position:absolute; inset:0 0 0 auto; width:32px; border-radius:0 12px 12px 0; background:linear-gradient(to right,rgba(23,35,57,0),rgba(23,35,57,.95)); pointer-events:none; }
+ .diagram-hint { display:block; margin-top:4px; }
+}
+@media(max-width:360px) {
+ #menu { column-gap:12px; }
+ #menu a { font-size:14px; }
+ .header-tools .nav-cv { font-size:12px; }
 }

@@ -1,5 +1,6 @@
 ---
 title: "About"
+bodyClass: about-page
 draft: false
 ---
 
