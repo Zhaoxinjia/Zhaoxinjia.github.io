@@ -12,7 +12,7 @@ My research focuses on **nanopore single-molecule sensing devices and biomedical
 
 ### 1. Nanopore molecular recognition {#molecular-recognition}
 
-The **PIToN model** guides aerolysin pore engineering for **sub-dalton single-molecule discrimination of protein citrullination** (accepted, *Nature Communications*). The same recognition framework underpins assays for neutral glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts, supporting protein-modification analysis, glycan structure determination, and drug–nucleic acid studies.
+The **PIToN model** guides aerolysin pore engineering for **sub-dalton single-molecule discrimination of protein citrullination** (accepted, *Nature Communications*). We also develop assays for neutral glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts, supporting protein-modification analysis, glycan structure determination, and drug–nucleic acid studies.
 
 {{< research-figure "recognition" >}}
 
@@ -22,7 +22,7 @@ We develop core solid-state nanopore detection modules, low-current ionic-record
 
 {{< research-figure "manipulation" >}}
 
-### 3. Mechanism and theory: two independent computational modules {#mechanistic-studies}
+### 3. Mechanism and theory {#mechanistic-studies}
 
 Two independent modules constrain the same measurement. **Molecular dynamics** resolves the local chemistry of the pore—confinement, electrostatics, hydrogen bonding, van der Waals and hydrophobic contacts. **Finite-element (Poisson–Nernst–Planck) simulation** resolves transport and the electric field in the channel. Neither is a preprocessing step for the other; both are compared against measured ΔI and Δt, and both feed back into pore design.
 

@@ -12,7 +12,7 @@ draft: false
 
 ### 1. 纳米孔分子识别 {#molecular-recognition}
 
-以 **PIToN 模型**指导气单胞菌溶素孔道工程化，实现蛋白质**瓜氨酸化修饰的亚道尔顿级单分子辨识**（已被 *Nature Communications* 接收）。同一识别框架下发展中性糖链、唾液酸连接异构体及顺铂–DNA 加合物的检测方法，服务于蛋白质修饰分析、糖链结构解析与药物–核酸相互作用研究。
+以 **PIToN 模型**指导气单胞菌溶素孔道工程化，实现蛋白质**瓜氨酸化修饰的亚道尔顿级单分子辨识**（已被 *Nature Communications* 接收）。发展中性糖链、唾液酸连接异构体及顺铂–DNA 加合物的检测方法，服务于蛋白质修饰分析、糖链结构解析与药物–核酸相互作用研究。
 
 {{< research-figure "recognition" >}}
 
@@ -22,7 +22,7 @@ draft: false
 
 {{< research-figure "manipulation" >}}
 
-### 3. 机制与理论：两套独立的计算模块 {#mechanistic-studies}
+### 3. 机制与理论 {#mechanistic-studies}
 
 两套相互独立的计算模块，共同约束同一个测量。**分子动力学**解析孔道局部的化学环境——限域位阻、静电、氢键、范德华与疏水作用；**有限元（Poisson–Nernst–Planck）模拟**解析孔道内的输运与电场。二者不是前后处理关系，而是各自独立地与实测 ΔI、Δt 对照，并共同反哺孔道设计。
 
