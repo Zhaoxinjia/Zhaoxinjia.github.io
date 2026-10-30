@@ -64,8 +64,8 @@
     "self_role": "",
     "kind": "research",
     "summary": {
-      "en": "Below 1 pF: a quartz-supported suspended membrane lowers solid-state nanopore capacitance, addressing a source of recording noise in single-molecule detection.",
-      "zh": "低于 1 pF：石英支撑悬膜降低固态纳米孔电容，针对单分子检测中记录噪声的一个影响因素改进器件结构。"
+      "en": "Below 1 pF: a quartz-supported suspended membrane reduces solid-state nanopore capacitance for low-noise single-molecule recording.",
+      "zh": "石英支撑悬膜将固态纳米孔电容降至 1 pF 以下，为低噪声单分子检测提供器件基础。"
     },
     "short_authors": [
       "Xiaoyu Chen",
@@ -251,7 +251,7 @@
     "kind": "review",
     "summary": {
       "en": "What can repeated measurements reveal about one molecule? This review examines molecular ping-pong control, its technical advances, and prospects for more consistent nanopore characterization.",
-      "zh": "重复测量能让我们更了解同一个分子吗？这篇综述梳理分子乒乓操控的原理、技术进展及改善纳米孔表征一致性的前景。"
+      "zh": "同一个分子能不能被测量上千次？这篇综述梳理分子乒乓的原理、技术进展与前景。"
     },
     "short_authors": [
       "Xinjia Zhao",
@@ -456,8 +456,8 @@
     "self_role": "cofirst",
     "kind": "research",
     "summary": {
-      "en": "Molecular tagging and an engineered aerolysin pore make neutral glycan structures distinguishable, addressing the challenge of obtaining identifiable signals from small, uncharged molecules.",
-      "zh": "分子标记结合工程化气单胞菌溶素孔道，使中性糖链结构可被辨识，回应小尺寸、不带电分子难以产生可辨识信号的挑战。"
+      "en": "Molecular tagging and an engineered aerolysin pore make neutral glycan structures distinguishable. The approach also reveals pore–molecule interactions during translocation.",
+      "zh": "中性糖链不带电，难以在纳米孔中产生可辨识信号。分子标记结合工程化孔道，让结构差异变得可分辨。"
     },
     "short_authors": [
       "Wenqi Lu#",

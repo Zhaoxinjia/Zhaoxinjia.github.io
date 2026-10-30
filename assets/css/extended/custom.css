@@ -215,3 +215,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
  #menu a { font-size:14px; }
  .header-tools .nav-cv { font-size:12px; }
 }
+
+/* V4: secondary mobile hints; retain branding when space permits. */
+@media(max-width:600px) {
+ .diagram-hint { margin-top:2px; font-size:12px; font-style:italic; opacity:.8; }
+}
+@media(max-width:360px) {
+ .site-brand picture { display:flex; }
+ .site-brand img { width:20px; height:20px; }
+ .header-nav .site-brand { font-size:15px; gap:6px; }
+}
