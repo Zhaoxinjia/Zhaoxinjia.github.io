@@ -176,3 +176,22 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .publication-entry h3 { margin:0 0 8px; font-size:18px; line-height:1.6; }
 .publication-entry h3 a { color:var(--primary); box-shadow:none; }
 .publication-entry h3 a:hover { color:var(--accent); text-decoration:underline; }
+
+/* V2: soften portrait crop, localize figure labels and reduce duplicated UI. */
+.hero-photo {
+ -webkit-mask-image:linear-gradient(to bottom, #000 70%, transparent 100%);
+ mask-image:linear-gradient(to bottom, #000 70%, transparent 100%);
+}
+.post-content .research-figure { margin:1.6em 0; padding:0; border:0; background:transparent; }
+.research-diagram { overflow-x:auto; border:1px solid var(--border); border-radius:12px; background:var(--entry); }
+.research-diagram img { display:block; width:100%; height:auto; min-width:650px; border-radius:0; }
+.post-content .research-figure figcaption { margin-top:10px; font-size:13px; font-weight:400; color:var(--secondary); text-align:left; }
+.doi-text { overflow-wrap:anywhere; user-select:text; }
+.post-content .patent-orig { font-size:13px; color:var(--secondary); margin-top:4px; font-weight:400; }
+@media(max-width:600px) {
+ .home-social .social-icons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 16px; }
+ .home-social .social-icons a { font-size:14px; min-height:44px; }
+ .header-tools { gap:4px; }
+ .header-tools .nav-cv { white-space:nowrap; font-size:13px; }
+ .header-nav .site-brand { font-size:17px; }
+}

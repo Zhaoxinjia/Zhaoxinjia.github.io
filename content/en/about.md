@@ -9,7 +9,7 @@ My research lies at the intersection of **nanopore single-molecule sensing devic
 
 ## Highlights
 
-- **24** peer-reviewed papers, **7** of them as first or corresponding author (including co-first authorship).
+- **24** peer-reviewed papers, **7** of them as first or corresponding author (including co-first authorship)
 - **5** Chinese invention patent applications, **3** granted
 - First Prize, Science and Technology Award of the China Association for Instrumental Analysis (CAIA), 2025
 - Supported by the Liaoning "Xingliao Yingcai" Postdoctoral Reserve Program (2024)
@@ -19,12 +19,12 @@ My research lies at the intersection of **nanopore single-molecule sensing devic
 
 | Period | Degree | Institution |
 |---|---|---|
-| 2015.09 – 2021.01 | Ph.D., Condensed Matter Physics | Institute of Physics, CAS (State Key Laboratory of Surface Physics), advisor: Prof. Xinghua Lu |
-| 2011.09 – 2015.07 | B.S., Physics | Jilin University |
+| Sep 2015 – Jan 2021 | Ph.D., Condensed Matter Physics | Institute of Physics, CAS (State Key Laboratory of Surface Physics), advisor: Prof. Xinghua Lu |
+| Sep 2011 – Jul 2015 | B.S., Physics | Jilin University |
 
 ## Experience
 
 | Period | Position | Institution |
 |---|---|---|
-| 2023.02 – present | Research Assistant Professor | Dalian Institute of Chemical Physics, CAS (Guangyan Qing group) |
-| 2021.01 – 2023.02 | Postdoctoral Researcher | Institute of Physics, CAS (with Prof. Xinghua Lu) |
+| Feb 2023 – present | Research Assistant Professor | Dalian Institute of Chemical Physics, CAS (Guangyan Qing group) |
+| Jan 2021 – Feb 2023 | Postdoctoral Researcher | Institute of Physics, CAS (with Prof. Xinghua Lu) |

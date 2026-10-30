@@ -64,8 +64,8 @@
     "self_role": "",
     "kind": "research",
     "summary": {
-      "en": "A quartz-supported suspended membrane reduces solid-state nanopore capacitance below 1 pF, supporting the development of low-capacitance single-molecule detection devices.",
-      "zh": "通过石英支撑悬膜将固态纳米孔电容降低至 1 pF 以下，为低电容单分子检测器件提供结构方案。"
+      "en": "Membrane capacitance contributes to recording noise; a quartz-supported suspended membrane reduces nanopore capacitance below 1 pF, supporting low-capacitance devices for single-molecule sensing.",
+      "zh": "膜电容是记录噪声的影响因素之一；石英支撑悬膜将纳米孔电容降至 1 pF 以下，为低电容单分子检测器件提供结构方案。"
     },
     "short_authors": [
       "Xiaoyu Chen",
@@ -100,8 +100,8 @@
     "self_role": "corresponding",
     "kind": "review",
     "summary": {
-      "en": "This review connects multiscale theoretical calculations with nanopore detection mechanisms, outlining how computational approaches inform interpretation and experimental design.",
-      "zh": "综述多尺度理论计算在纳米孔检测机制分析中的作用，梳理计算方法与实验解释、设计之间的联系。"
+      "en": "Nanopore signals can be difficult to interpret; this review examines how multiscale calculations explain molecular interactions and inform pore design and detection conditions.",
+      "zh": "纳米孔信号的机制解释存在挑战；这篇综述梳理多尺度计算如何解析分子相互作用，以及如何用于孔道设计与检测条件优化。"
     },
     "short_authors": [
       "Dongdong Wang",
@@ -116,8 +116,8 @@
     "id": "pub-22",
     "status": "published",
     "citation": {
-      "en": "Jiaqi Li, <u><strong>Xinjia Zhao</strong></u>, Minmin Li, Wei Yu, Yuting Li, Chen Zhang, Hongzhi Cao, Kan Zhong, Jing Wang, Yuchen Cao, Xiaonong Li, Han Zhou, Guoxiong Wang, Xinmiao Liang*, Guangyan Qing*. Single-feature identification of α2-8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis. <em>J. Am. Chem. Soc.</em>, 2026, 148, 10649–10662. <a class=\"doi-link\" href=\"https://doi.org/10.1021/jacs.5c19634\" target=\"_blank\" rel=\"noopener\">DOI&#8599;</a>",
-      "zh": "Jiaqi Li, <u><strong>Xinjia Zhao</strong></u>, Minmin Li, Wei Yu, Yuting Li, Chen Zhang, Hongzhi Cao, Kan Zhong, Jing Wang, Yuchen Cao, Xiaonong Li, Han Zhou, Guoxiong Wang, Xinmiao Liang*, Guangyan Qing*. Single-feature identification of α2-8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis. <em>J. Am. Chem. Soc.</em>, 2026, 148, 10649–10662. <a class=\"doi-link\" href=\"https://doi.org/10.1021/jacs.5c19634\" target=\"_blank\" rel=\"noopener\">DOI&#8599;</a>"
+      "en": "Jiaqi Li, <u><strong>Xinjia Zhao</strong></u>, Minmin Li, Wei Yu, Yuting Li, Chen Zhang, Hongzhi Cao, Kan Zhong, Jing Wang, Yuchen Cao, Xiaonong Li, Han Zhou, Guoxiong Wang, Xinmiao Liang*, Guangyan Qing*. Single-feature identification of α2–8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis. <em>J. Am. Chem. Soc.</em>, 2026, 148, 10649–10662. <a class=\"doi-link\" href=\"https://doi.org/10.1021/jacs.5c19634\" target=\"_blank\" rel=\"noopener\">DOI&#8599;</a>",
+      "zh": "Jiaqi Li, <u><strong>Xinjia Zhao</strong></u>, Minmin Li, Wei Yu, Yuting Li, Chen Zhang, Hongzhi Cao, Kan Zhong, Jing Wang, Yuchen Cao, Xiaonong Li, Han Zhou, Guoxiong Wang, Xinmiao Liang*, Guangyan Qing*. Single-feature identification of α2–8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis. <em>J. Am. Chem. Soc.</em>, 2026, 148, 10649–10662. <a class=\"doi-link\" href=\"https://doi.org/10.1021/jacs.5c19634\" target=\"_blank\" rel=\"noopener\">DOI&#8599;</a>"
     },
     "source": "Original content/en/publications.md and content/zh/publications.md, entry 4",
     "authors": [
@@ -137,15 +137,15 @@
       "Xinmiao Liang*",
       "Guangyan Qing*"
     ],
-    "title": "Single-feature identification of α2-8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis.",
+    "title": "Single-feature identification of α2–8 linked sialoglycans using engineered aerolysin nanopores: A paradigm for glycan linkage analysis.",
     "journal": "J. Am. Chem. Soc.",
     "year": 2026,
     "doi": "10.1021/jacs.5c19634",
     "self_role": "",
     "kind": "research",
     "summary": {
-      "en": "Engineered aerolysin nanopores distinguish α2–8 linked sialoglycans through a characteristic ionic-current feature, connecting single-molecule sensing with glycan linkage analysis.",
-      "zh": "利用工程化气单胞菌溶素纳米孔的电流特征辨识 α2–8 连接唾液酸糖链，探索糖链连接方式的单分子分析。"
+      "en": "Glycan linkages are difficult to distinguish; engineered aerolysin nanopores identify α2–8 linked sialoglycans using a characteristic ionic-current feature for single-molecule glycan linkage analysis.",
+      "zh": "糖链连接方式难以辨识；利用工程化气单胞菌溶素纳米孔的特征电流信号，开展 α2–8 连接唾液酸糖链的单分子识别。"
     },
     "short_authors": [
       "Jiaqi Li",
@@ -250,8 +250,8 @@
     "self_role": "first",
     "kind": "review",
     "summary": {
-      "en": "This review examines molecular ping-pong control and repeated single-molecule measurements, discussing their principles, technological advances, and prospects for nanopore analysis.",
-      "zh": "综述分子乒乓操控与同一分子重复测量的原理、技术进展和应用展望，为单分子分析提供研究路线。"
+      "en": "Single translocations vary; this review examines molecular ping-pong control, which repeatedly measures the same molecule to reduce variability and improve characterization at the single-molecule level.",
+      "zh": "单次穿孔事件存在波动；这篇综述梳理分子乒乓操控，通过重复测量同一分子降低变异，改善单分子表征。"
     },
     "short_authors": [
       "Xinjia Zhao",
@@ -380,8 +380,8 @@
     "self_role": "",
     "kind": "research",
     "summary": {
-      "en": "Repeated capture of a single DNA molecule exceeds ten thousand events, enabling analysis of reduced variance and molecular translocation dynamics.",
-      "zh": "实现同一 DNA 分子的上万次重复捕获，研究重复测量中的穿孔特征方差变化及分子输运动力学。"
+      "en": "Individual translocation events fluctuate; over ten thousand recaptures of the same DNA molecule reduce feature variance and enable more consistent analysis of molecular translocation dynamics.",
+      "zh": "单次穿孔事件的特征存在波动；对同一 DNA 分子进行上万次重复捕获，降低特征方差，使分子输运动力学分析更为一致。"
     },
     "short_authors": [
       "Zhuang Mi",
@@ -456,8 +456,8 @@
     "self_role": "cofirst",
     "kind": "research",
     "summary": {
-      "en": "Molecular tagging and an engineered aerolysin pore enable neutral glycan analysis, linking molecular recognition to pore interactions and translocation dynamics.",
-      "zh": "结合分子标记与工程化气单胞菌溶素孔道开展中性糖链结构分析，并研究孔道相互作用与跨孔动力学。"
+      "en": "Neutral glycans are difficult to detect with nanopores; molecular tagging and an engineered aerolysin pore enable structural discrimination while revealing pore–molecule interactions during translocation.",
+      "zh": "中性糖链难以产生可辨识的纳米孔信号；结合分子标记和工程化气单胞菌溶素孔道，实现结构辨识并研究跨孔过程中的相互作用。"
     },
     "short_authors": [
       "Wenqi Lu#",

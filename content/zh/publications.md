@@ -1,6 +1,6 @@
 ---
 title: "论文与稿件"
-description: "赵新佳的论文与稿件，按已发表、预印本与在审状态分类。"
+description: "赵新佳的论文与稿件，按已发表与在审状态分类。"
 draft: false
 ---
 
@@ -8,7 +8,7 @@ draft: false
 
 [Google Scholar](https://scholar.google.com/citations?user=gJ9BsdAAAAAJ) · [ResearchGate](https://www.researchgate.net/profile/Xinjia-Zhao)
 
-`#` 共同第一作者；`*` 通讯作者。**●** 标记赵新佳为第一作者、共同第一作者或通讯作者的论文。展开条目可查看完整作者名单。
+`#` 共同第一作者；`*` 通讯作者。**●** 仅标记赵新佳为第一作者、共同第一作者或通讯作者的已发表论文。展开条目可查看完整作者名单。
 
 {{< publication-list >}}
 

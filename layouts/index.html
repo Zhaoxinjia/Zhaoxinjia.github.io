@@ -5,7 +5,7 @@
 <p class="eyebrow">{{ $copy.role }}</p><h1 id="hero-name">{{ site.Title }}</h1>
 <p class="hero-affil">{{ $copy.affiliation }}</p>
 <p class="hero-intro">{{ $copy.intro }}</p><p class="hero-summary">{{ $copy.summary }}</p>
-<div class="hero-buttons"><a class="hero-btn primary" href="#selected">{{ if $zh }}代表论文{{ else }}Selected papers{{ end }}</a><a class="hero-btn" href="{{ "cv/Xinjia_Zhao_CV.pdf" | relURL }}" download="Xinjia-Zhao-CV.pdf">{{ if $zh }}简历（PDF）{{ else }}CV (PDF){{ end }}</a></div>
+<div class="hero-buttons"><a class="hero-btn primary" href="#selected">{{ $copy.selected }}</a><a class="hero-btn" href="{{ "cv/Xinjia_Zhao_CV.pdf" | relURL }}" download="Xinjia-Zhao-CV.pdf">{{ if $zh }}简历（PDF）{{ else }}CV (中文){{ end }}</a></div>
 <div class="home-social">{{ partial "social_icons.html" (dict) }}</div>
 </div>
 <picture class="hero-portrait"><source media="(max-width: 600px)" srcset="{{ "img/portrait-240.webp" | relURL }}" type="image/webp"><source srcset="{{ "img/portrait-cutout.webp" | relURL }}" type="image/webp"><img class="hero-photo" src="{{ "img/portrait-fallback.png" | relURL }}" alt="{{ if $zh }}赵新佳肖像{{ else }}Portrait of Xinjia Zhao{{ end }}" width="240" height="240" fetchpriority="high"></picture>
@@ -31,6 +31,6 @@
 {{ with hugo.Data.news }}
 <section class="home-section" aria-labelledby="news-title"><h2 id="news-title">{{ if $zh }}动态{{ else }}News{{ end }}</h2><ul class="news-list">
 {{ range first 5 (sort . "date" "desc") }}{{ $p := index (where hugo.Data.publications "id" .publication) 0 }}
-<li><time datetime="{{ .date }}">{{ dateFormat "2006.01" .date }}</time><span><a href="https://doi.org/{{ $p.doi }}">{{ index . $lang }}</a></span></li>
+<li><time datetime="{{ .date }}">{{ if $zh }}{{ dateFormat "2006.01" .date }}{{ else }}{{ dateFormat "Jan 2006" .date }}{{ end }}</time><span><a href="https://doi.org/{{ $p.doi }}">{{ index . $lang }}</a></span></li>
 {{ end }}</ul></section>{{ end }}
 {{ end }}
