@@ -38,9 +38,9 @@ for(const lang of ['en','zh'])for(const slug of ['', 'about','research','publica
 }
 const pubs=JSON.parse(fs.readFileSync(path.join(root,'data/publications.json')));
 assert.equal(new Set(pubs.map(p=>p.id)).size,pubs.length,'Duplicate publication IDs');
-assert(pubs.every(p=>['published','preprint','under_review'].includes(p.status)));
+assert(pubs.every(p=>['published','in_press','preprint','under_review'].includes(p.status)));
 const selections=JSON.parse(fs.readFileSync(path.join(root,'data/selected_publications.json')));
 assert.equal(new Set(selections.confirmed_ids).size,selections.confirmed_ids.length);
-for(const id of selections.confirmed_ids)assert(pubs.some(p=>p.id===id&&p.status==='published'),'Invalid selected publication');
+for(const id of selections.confirmed_ids)assert(pubs.some(p=>p.id===id&&['published','in_press'].includes(p.status)),'Invalid selected publication');
 for(const id of selections.pending_ids)assert(pubs.some(p=>p.id===id&&p.status==='published')&&!selections.confirmed_ids.includes(id),'Invalid pending publication');
-console.log(JSON.stringify({htmlFiles:htmlFiles.length,internalReferences:count,bilingualCorePages:10,published:pubs.filter(p=>p.status==='published').length,underReview:pubs.filter(p=>p.status==='under_review').length,confirmedSelections:selections.confirmed_ids.length},null,2));
+console.log(JSON.stringify({htmlFiles:htmlFiles.length,internalReferences:count,bilingualCorePages:10,published:pubs.filter(p=>p.status==='published').length,underReview:pubs.filter(p=>p.status==='under_review').length,inPress:pubs.filter(p=>p.status==='in_press').length,confirmedSelections:selections.confirmed_ids.length},null,2));

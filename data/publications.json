@@ -1,10 +1,10 @@
 [
   {
     "id": "pub-25",
-    "status": "under_review",
+    "status": "in_press",
     "citation": {
-      "en": "<u><strong>Xinjia Zhao</strong></u>#, Jiarong Zhang#, Juanjuan Zhao#, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian, Guangyan Qing*. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026 (under review).",
-      "zh": "<u><strong>Xinjia Zhao</strong></u>#, Jiarong Zhang#, Juanjuan Zhao#, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian, Guangyan Qing*. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026（审稿中）."
+      "en": "<u><strong>Xinjia Zhao</strong></u>#, Jiarong Zhang#, Juanjuan Zhao#, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian, Guangyan Qing*. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026 (in press).",
+      "zh": "<u><strong>Xinjia Zhao</strong></u>#, Jiarong Zhang#, Juanjuan Zhao#, Wei Yong, Zeyuan Zhao, Minmin Li, Yuchen Cao, Wenjing Sun, Jing Wang, Dongdong Wang, Jiaqi Li, Kuoxi Xu, Yangyang Bian, Guangyan Qing*. Sub-dalton discrimination of citrullination by a semi-rationally designed aerolysin nanopore. <em>Nat. Commun.</em>, 2026（已接收，待刊）."
     },
     "source": "Original content/en/publications.md and content/zh/publications.md, entry 1",
     "authors": [
@@ -37,7 +37,12 @@
       "Zeyuan Zhao",
       "Minmin Li",
       "et al."
-    ]
+    ],
+    "status_source": "Author-provided English and Chinese CVs, received 2026-10-30: in press / 接收. No DOI supplied.",
+    "summary": {
+      "en": "PIToN-guided aerolysin engineering enables sub-dalton single-molecule discrimination of protein citrullination.",
+      "zh": "提出 PIToN 纳米孔工程化模型，实现蛋白质瓜氨酸化修饰的亚道尔顿级单分子辨识。"
+    }
   },
   {
     "id": "pub-24",
@@ -575,7 +580,11 @@
       "Mingliang Tang",
       "Xiaoyu Zhang",
       "Guangyan Qing*"
-    ]
+    ],
+    "summary": {
+      "en": "This review surveys biological and solid-state nanopore approaches to protein post-translational modification detection, outlining their principles and applications in single-molecule bioanalysis.",
+      "zh": "综述生物纳米孔与固态纳米孔检测蛋白质翻译后修饰的原理及应用，梳理相关单分子分析方法。"
+    }
   },
   {
     "id": "pub-09",
@@ -819,7 +828,11 @@
       "Wei Li",
       "Pengye Wang*",
       "et al."
-    ]
+    ],
+    "summary": {
+      "en": "Dwell-time, current-trace and basecalling analyses identify individual cisplatin adducts on DNA, supporting single-molecule investigation of drug–nucleic acid interactions.",
+      "zh": "结合驻留时间、电流轨迹与碱基识别分析，检测 DNA 上的单个顺铂加合物，研究药物–核酸相互作用。"
+    }
   },
   {
     "id": "pub-02",
@@ -852,7 +865,11 @@
       "Wei Li",
       "Xinyan Shan*",
       "et al."
-    ]
+    ],
+    "summary": {
+      "en": "Sequence-dependent dwell times reveal differential interactions between DNA bases and a nanopore, distinguishing viscous drag and intermolecular contributions at single-nucleotide resolution.",
+      "zh": "通过驻留时间与序列的关联，解析碱基与孔道的差异相互作用，区分黏滞阻力和分子间作用的贡献。"
+    }
   },
   {
     "id": "pub-01",
@@ -892,6 +909,10 @@
       "Ruifen Dou",
       "Ke Liu",
       "et al."
-    ]
+    ],
+    "summary": {
+      "en": "Solid-state nanopores detect the translocation of tetrahedral DNA nanostructures, extending single-molecule analysis to designed DNA architectures.",
+      "zh": "利用固态纳米孔检测四面体 DNA 纳米结构的穿孔过程，将单分子分析拓展至设计的 DNA 架构。"
+    }
   }
 ]

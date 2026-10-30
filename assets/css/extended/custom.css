@@ -225,3 +225,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
  .site-brand img { width:20px; height:20px; }
  .header-nav .site-brand { font-size:15px; gap:6px; }
 }
+
+.paper-status { color:var(--accent); font-size:13px; font-weight:650; margin-top:4px; }
+.post-content .patent-entry { padding-inline-start:.4em; margin-bottom:24px; }
+.post-content .patent-entry h3 { font-size:18px; line-height:1.6; margin:0 0 8px; }
+.post-content .patent-entry p { margin:6px 0; }
+.patent-inventors { font-size:15px; }
+.patent-number { font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }

@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ $cv := index hugo.Data.cv .Lang }}
 {{ $copy := index hugo.Data.home .Lang }}{{ $lang := .Lang }}{{ $zh := eq $lang "zh" }}
 <section class="home-hero" aria-labelledby="hero-name">
 <div class="hero-text">
 <p class="eyebrow">{{ $copy.role }}</p><h1 id="hero-name">{{ site.Title }}</h1>
 <p class="hero-affil">{{ $copy.affiliation }}</p>
 <p class="hero-intro">{{ $copy.intro }}</p><p class="hero-summary">{{ $copy.summary }}</p>
-<div class="hero-buttons"><a class="hero-btn primary" href="#selected">{{ $copy.selected }}</a><a class="hero-btn" href="{{ "cv/Xinjia_Zhao_CV.pdf" | relURL }}" download="Xinjia-Zhao-CV.pdf">{{ if $zh }}简历（PDF）{{ else }}CV (中文){{ end }}</a></div>
+<div class="hero-buttons"><a class="hero-btn primary" href="#selected">{{ $copy.selected }}</a><a class="hero-btn" href="{{ $cv.path | relURL }}" download="{{ $cv.filename }}" title="{{ $cv.title }}">{{ $cv.label }}</a></div>
 <div class="home-social">{{ partial "social_icons.html" (dict) }}</div>
 </div>
 <picture class="hero-portrait"><source media="(max-width: 600px)" srcset="{{ "img/portrait-240.webp" | relURL }}" type="image/webp"><source srcset="{{ "img/portrait-cutout.webp" | relURL }}" type="image/webp"><img class="hero-photo" src="{{ "img/portrait-fallback.png" | relURL }}" alt="{{ if $zh }}赵新佳肖像{{ else }}Portrait of Xinjia Zhao{{ end }}" width="240" height="240" fetchpriority="high"></picture>
@@ -22,9 +23,9 @@
 <div class="selected-list">
 {{ range hugo.Data.selected_publications.confirmed_ids }}
 {{ $matches := where hugo.Data.publications "id" . }}{{ if ne (len $matches) 1 }}{{ errorf "Invalid selected ID %s" . }}{{ end }}
-{{ range $matches }}{{ if ne .status "published" }}{{ errorf "Selected ID %s is not published" .id }}{{ end }}
-<article class="selected-paper"><div class="selected-meta"><span>{{ .year }}</span><span>{{ .journal }}</span><span class="paper-kind">{{ if eq .kind "review" }}{{ if $zh }}综述{{ else }}Review{{ end }}{{ else }}{{ if $zh }}研究论文{{ else }}Research article{{ end }}{{ end }}</span></div>
-<div><h3><a href="https://doi.org/{{ .doi }}">{{ .title }}</a></h3><p>{{ index .summary $lang }}</p></div></article>
+{{ range $matches }}{{ if not (in (slice "published" "in_press") .status) }}{{ errorf "Invalid publication status for selected ID %s" .id }}{{ end }}
+<article class="selected-paper"><div class="selected-meta"><span>{{ .year }}</span><span>{{ .journal }}</span><span class="paper-kind">{{ if eq .kind "review" }}{{ if $zh }}综述{{ else }}Review{{ end }}{{ else }}{{ if $zh }}研究论文{{ else }}Research article{{ end }}{{ end }}</span>{{ if eq .status "in_press" }}<span class="paper-status">{{ if $zh }}已接收 · 待刊{{ else }}Accepted · in press{{ end }}</span>{{ end }}</div>
+<div><h3>{{ if .doi }}<a href="https://doi.org/{{ .doi }}">{{ .title }}</a>{{ else }}<a href="{{ "publications/" | relLangURL }}#{{ .id }}">{{ .title }}</a>{{ end }}</h3><p>{{ index .summary $lang }}</p></div></article>
 {{ end }}{{ end }}
 </div><a class="text-link" href="{{ "publications/" | relLangURL }}">{{ $copy.publications }} →</a>
 </section>

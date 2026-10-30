@@ -45,7 +45,7 @@ for(const lang of ['','zh/'])for(const width of [360,1440]){
  await page.screenshot({path:path.join(out,'publications-'+(lang?'zh':'en')+'-'+width+'-light.png'),fullPage:true});
 }
 await page.goto('http://127.0.0.1:'+server.address().port+'/');
-assert.equal(await page.locator('#selected .selected-paper').count(),6);
+assert.equal(await page.locator('#selected .selected-paper').count(),JSON.parse(fs.readFileSync(path.join(root,'data/selected_publications.json'))).confirmed_ids.length);
 await page.context().setOffline(true);
   assert.equal(await page.locator('.research-card').count(),3);
   assert.deepEqual(errors,[]);

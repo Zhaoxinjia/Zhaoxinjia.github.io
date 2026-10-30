@@ -1,0 +1,16 @@
+{
+  "en": {
+    "path": "cv/Xinjia_Zhao_CV_EN.pdf",
+    "filename": "Xinjia_Zhao_CV_EN.pdf",
+    "label": "CV (PDF)",
+    "title": "Download English CV (PDF)",
+    "accessible": "CV — English PDF"
+  },
+  "zh": {
+    "path": "cv/Xinjia_Zhao_CV_ZH.pdf",
+    "filename": "Xinjia_Zhao_CV_ZH.pdf",
+    "label": "简历（PDF）",
+    "title": "下载中文简历（PDF）",
+    "accessible": "简历 — 中文 PDF"
+  }
+}

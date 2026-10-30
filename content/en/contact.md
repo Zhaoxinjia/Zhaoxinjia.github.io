@@ -18,4 +18,4 @@ Dalian Institute of Chemical Physics, Chinese Academy of Sciences
 
 ## Curriculum Vitae
 
-[CV (PDF, Chinese)](/cv/Xinjia_Zhao_CV.pdf)
+[English CV (PDF)](/cv/Xinjia_Zhao_CV_EN.pdf) · [中文简历（PDF）](/cv/Xinjia_Zhao_CV_ZH.pdf)

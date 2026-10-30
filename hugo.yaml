@@ -66,7 +66,7 @@ languages:
     title: "赵新佳"
     contentDir: content/zh
     params:
-      description: "赵新佳，中国科学院大连化学物理研究所助理研究员，研究纳米孔单分子检测、生物分析与医工交叉。"
+      description: "赵新佳，中国科学院大连化学物理研究所助理研究员，研究 PIToN 纳米孔工程化、单分子检测、生物分析与分子模拟。"
       subtitle: "中国科学院大连化学物理研究所 助理研究员"
       profileMode:
         enabled: true
@@ -103,8 +103,8 @@ languages:
 params:
   env: production
   title: "Xinjia Zhao"
-  description: "Personal academic website of Xinjia Zhao — nanopore single-molecule sensing and bioanalysis."
-  keywords: ["Xinjia Zhao", "nanopore", "single-molecule", "bioanalysis", "DICP", "CAS"]
+  description: "Personal academic website of Xinjia Zhao — PIToN-guided nanopore engineering, single-molecule sensing and simulation."
+  keywords: ["Xinjia Zhao", "nanopore", "single-molecule", "bioanalysis", "DICP", "CAS", "PIToN", "molecular dynamics", "finite-element simulation"]
   author: "Xinjia Zhao"
 
   defaultTheme: dark

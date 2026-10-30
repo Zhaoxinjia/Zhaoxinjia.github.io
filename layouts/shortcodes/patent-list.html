@@ -1,0 +1,13 @@
+{{ $lang := .Page.Lang }}{{ $zh := eq $lang "zh" }}
+{{ range slice "granted" "application" }}{{ $status := . }}{{ $items := where hugo.Data.patents "status" . }}
+{{ with $items }}
+<section class="patent-group" aria-labelledby="patents-{{ $status }}">
+<h2 id="patents-{{ $status }}">{{ if eq $status "granted" }}{{ if $zh }}发明专利（已授权）{{ else }}Patents (granted){{ end }}{{ else }}{{ if $zh }}发明专利申请{{ else }}Patent applications{{ end }}{{ end }}</h2>
+<ol class="patent-list"{{ if eq $status "application" }} start="{{ add (len (where hugo.Data.patents "status" "granted")) 1 }}"{{ end }}>
+{{ range . }}<li class="patent-entry" id="{{ .id }}" value="{{ .order }}">
+<h3>{{ index .title $lang }}</h3>
+<p><span class="patent-number">{{ if eq $status "granted" }}{{ if $zh }}专利号{{ else }}Patent No.{{ end }}{{ else }}{{ if $zh }}申请号{{ else }}Application No.{{ end }}{{ end }} {{ .number }}</span></p>
+<p class="patent-inventors">{{ if $zh }}发明人：{{ else }}Inventors: {{ end }}{{ delimit (index .inventors $lang) (cond $zh "、" ", ") }}</p>
+{{ if not $zh }}<p class="patent-orig" lang="zh-CN">原名：{{ .title.zh }}</p>{{ end }}
+</li>{{ end }}</ol></section>
+{{ end }}{{ end }}

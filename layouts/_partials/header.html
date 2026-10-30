@@ -1,4 +1,5 @@
 {{ $zh := eq .Lang "zh" }}
+{{ $cv := index hugo.Data.cv .Lang }}
 <a class="skip-link" href="#main-content">{{ if $zh }}跳至正文{{ else }}Skip to content{{ end }}</a>
 <header class="header">
 <nav class="header-nav" aria-label="{{ if $zh }}主导航{{ else }}Main navigation{{ end }}">
@@ -10,7 +11,7 @@
 {{ end }}
 </ul>
 <div class="header-tools">
-<a class="nav-cv" href="{{ "cv/Xinjia_Zhao_CV.pdf" | relURL }}" download="Xinjia-Zhao-CV.pdf" aria-label="{{ if $zh }}简历 — 中文 PDF{{ else }}CV — Chinese-language PDF{{ end }}" title="{{ if $zh }}下载中文简历（PDF）{{ else }}Download Chinese-language CV (PDF){{ end }}">{{ if $zh }}简历{{ else }}CV{{ end }}</a>
+<a class="nav-cv" href="{{ $cv.path | relURL }}" download="{{ $cv.filename }}" aria-label="{{ $cv.accessible }}" title="{{ $cv.title }}">{{ if $zh }}简历{{ else }}CV{{ end }}</a>
 {{ range .Translations }}<a class="language-switch" href="{{ .RelPermalink }}" lang="{{ .Language.Locale }}" hreflang="{{ .Language.Locale }}" aria-label="{{ .Language.Label }} — {{ if $zh }}切换到英文{{ else }}Switch to Chinese{{ end }}" title="{{ if $zh }}切换到英文{{ else }}Switch to Chinese{{ end }}">{{ .Language.Label }}</a>{{ end }}
 <button id="theme-toggle" type="button" aria-label="{{ if $zh }}切换深色或浅色主题{{ else }}Switch light or dark theme{{ end }}" title="{{ if $zh }}切换主题{{ else }}Switch theme{{ end }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg></button>
 </div>

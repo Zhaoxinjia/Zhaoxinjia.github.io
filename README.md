@@ -27,12 +27,13 @@ scripts/check-browser.cjs 为可选浏览器检查，需要环境中的 Playwrig
 
 - 双语正文：content/en/ 与 content/zh/，必须同步维护。
 - 首页文案与研究入口：data/home.json。
-- 论文：data/publications.json，使用稳定 ID；状态为 published、preprint、under_review。citation.en/zh 保留原始完整引文，结构化 title/authors/year/journal/doi 用于列表展示，更新时同步维护。
-- self_role 为 first、cofirst、corresponding 或空字符串；当前已发表 24 篇，其中 6 篇第一/共同第一、1 篇共同通讯。不要把在审稿件计入已发表数字。
+- 论文：data/publications.json，使用稳定 ID；状态为 published、in_press（已接收待刊）、preprint、under_review。citation.en/zh 保留原始完整引文，结构化 title/authors/year/journal/doi 用于列表展示，更新时同步维护。
+- self_role 为 first、cofirst、corresponding 或空字符串；当前已发表 24 篇，其中 6 篇第一/共同第一、1 篇共同通讯。另有 1 篇已接收待刊，不计入 24 篇已发表数字。
 - short_authors 控制简短作者显示，必须保留本人姓名；完整作者可在页面展开。
 - 代表作：data/selected_publications.json 的 confirmed_ids，顺序即首页展示顺序；summary.en/zh 在论文记录中维护。
 - 动态：data/news.json，日期使用真实上线日期，附对应 publication ID，最多展示 5 条。
-- CV：static/cv/Xinjia_Zhao_CV.pdf，沿用原有中文文件，主页与导航提供入口；请作者独立维护 PDF 内容。
+- CV：static/cv/Xinjia_Zhao_CV_EN.pdf 与 Xinjia_Zhao_CV_ZH.pdf；data/cv.json 控制双语主页、导航的对应下载入口，联系页提供两版。旧 Xinjia_Zhao_CV.pdf 为中文版兼容地址，更新中文时须同步。PDF 由作者维护，原文件直接发布。
+- 专利：data/patents.json，granted 与 application 分开维护，保留各语言标题、发明人顺序、专利号/申请号及来源。
 - 头像：static/img/portrait-cutout.webp，PNG 兜底；原始 photo.jpg 保留。logo 使用 64/128 px 版本。
 - 科研示意图：static/img/research-*.svg，为概念图；图注由 layouts/shortcodes/research-figure.html 输出，不代表实验数据或 MD 结果。
 - 分享图：static/img/og-cover.png（1200×630）。

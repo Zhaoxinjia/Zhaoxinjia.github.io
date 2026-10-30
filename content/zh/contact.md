@@ -18,4 +18,4 @@ draft: false
 
 ## 个人简历
 
-[简历（PDF，中文）](/cv/Xinjia_Zhao_CV.pdf)
+[中文简历（PDF）](/cv/Xinjia_Zhao_CV_ZH.pdf) · [English CV (PDF)](/cv/Xinjia_Zhao_CV_EN.pdf)

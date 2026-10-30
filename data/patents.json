@@ -1,0 +1,135 @@
+[
+  {
+    "id": "patent-1",
+    "order": 1,
+    "status": "granted",
+    "number": "ZL201811088465.1",
+    "title": {
+      "en": "Mold and method for fabricating an insulating base, and use of the base in molecular detection",
+      "zh": "一种制备绝缘基座的模具、方法及基座在分子探测中的应用"
+    },
+    "inventors": {
+      "zh": [
+        "赵新佳",
+        "单欣岩",
+        "陆兴华"
+      ],
+      "en": [
+        "Xinjia Zhao",
+        "Xinyan Shan",
+        "Xinghua Lu"
+      ]
+    },
+    "source": "Author-provided bilingual CVs, 2026-10-30"
+  },
+  {
+    "id": "patent-2",
+    "order": 2,
+    "status": "granted",
+    "number": "ZL202110598008.2",
+    "title": {
+      "en": "Force-spectroscopy analysis method and apparatus based on nanopore sequencing",
+      "zh": "基于纳米孔测序的力谱分析方法和分析装置"
+    },
+    "inventors": {
+      "zh": [
+        "赵新佳",
+        "陈晓钰",
+        "米壮",
+        "单欣岩",
+        "陆兴华"
+      ],
+      "en": [
+        "Xinjia Zhao",
+        "Xiaoyu Chen",
+        "Zhuang Mi",
+        "Xinyan Shan",
+        "Xinghua Lu"
+      ]
+    },
+    "source": "Author-provided bilingual CVs, 2026-10-30"
+  },
+  {
+    "id": "patent-3",
+    "order": 3,
+    "status": "granted",
+    "number": "ZL201911053046.9",
+    "title": {
+      "en": "Apparatus and method for controlling the motion of biomolecules in a nanopore",
+      "zh": "控制生物分子在纳米孔中运动的装置和方法"
+    },
+    "inventors": {
+      "zh": [
+        "陈晓钰",
+        "赵新佳",
+        "米壮",
+        "贺雅茹",
+        "单欣岩",
+        "陆兴华"
+      ],
+      "en": [
+        "Xiaoyu Chen",
+        "Xinjia Zhao",
+        "Zhuang Mi",
+        "Yaru He",
+        "Xinyan Shan",
+        "Xinghua Lu"
+      ]
+    },
+    "source": "Author-provided bilingual CVs, 2026-10-30"
+  },
+  {
+    "id": "patent-4",
+    "order": 4,
+    "status": "application",
+    "number": "CN202010947474.2",
+    "title": {
+      "en": "Nanopore microfluidic chamber and its applications",
+      "zh": "一种纳米孔微流腔及其应用"
+    },
+    "inventors": {
+      "zh": [
+        "陈晓钰",
+        "赵新佳",
+        "米壮",
+        "单欣岩",
+        "陆兴华"
+      ],
+      "en": [
+        "Xiaoyu Chen",
+        "Xinjia Zhao",
+        "Zhuang Mi",
+        "Xinyan Shan",
+        "Xinghua Lu"
+      ]
+    },
+    "source": "Author-provided bilingual CVs, 2026-10-30"
+  },
+  {
+    "id": "patent-5",
+    "order": 5,
+    "status": "application",
+    "number": "CN202010946762.6",
+    "title": {
+      "en": "Device and method for high-throughput screening of biomolecules",
+      "zh": "高通量筛选生物分子的装置及其应用"
+    },
+    "inventors": {
+      "zh": [
+        "陈晓钰",
+        "赵新佳",
+        "米壮",
+        "单欣岩",
+        "陆兴华"
+      ],
+      "en": [
+        "Xiaoyu Chen",
+        "Xinjia Zhao",
+        "Zhuang Mi",
+        "Xinyan Shan",
+        "Xinghua Lu"
+      ]
+    },
+    "source": "Author-provided bilingual CVs, 2026-10-30"
+  }
+]

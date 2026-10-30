@@ -3,7 +3,7 @@
     "role": "Research Assistant Professor",
     "affiliation": "Dalian Institute of Chemical Physics, Chinese Academy of Sciences",
     "intro": "Nanopore single-molecule sensing, bioanalysis, and medical engineering.",
-    "summary": "Developing molecular recognition methods and actively controllable, repeatedly readable single-molecule analysis platforms.",
+    "summary": "Engineering nanopores with the PIToN model, repeatedly measuring individual molecules, and interpreting sensing mechanisms with molecular dynamics and finite-element simulation.",
     "research": "Research directions",
     "publications": "All publications",
     "about": "About me",
@@ -12,7 +12,7 @@
       {
         "id": "nanopore-sensing",
         "title": "Nanopore Sensing",
-        "description": "Engineered nanopores for molecular recognition of protein modifications, glycans, and drug–DNA interactions."
+        "description": "PIToN-guided aerolysin engineering for protein citrullination; nanopore assays for glycans, sialic-acid linkage isomers, and cisplatin–DNA adducts."
       },
       {
         "id": "single-molecule-manipulation",
@@ -22,7 +22,7 @@
       {
         "id": "mechanistic-studies",
         "title": "Mechanistic Studies",
-        "description": "Molecular dynamics and multiscale calculations to study pore interactions, molecular transport, and ionic current signals."
+        "description": "Molecular dynamics and finite-element simulation to interpret pore–molecule interactions, molecular transport, and ionic-current signals."
       }
     ]
   },
@@ -30,7 +30,7 @@
     "role": "助理研究员",
     "affiliation": "中国科学院大连化学物理研究所",
     "intro": "纳米孔单分子检测 · 生物分析 · 医工交叉",
-    "summary": "发展纳米孔分子识别方法，构建主动操控、多次读取的单分子分析平台。",
+    "summary": "以 PIToN 模型指导纳米孔工程化，发展同一分子的重复测量，并结合分子动力学与有限元模拟解析检测机制。",
     "research": "研究方向",
     "publications": "全部论文与稿件",
     "about": "关于我",
@@ -40,7 +40,7 @@
         "id": "nanopore-sensing",
         "title": "Nanopore Sensing",
         "label": "纳米孔传感",
-        "description": "利用工程化纳米孔研究蛋白质修饰、糖链及药物–DNA 相互作用的分子识别方法。"
+        "description": "以 PIToN 模型指导瓜氨酸化检测的纳米孔工程化，并发展中性糖链、唾液酸连接异构体及顺铂–DNA 加合物分析。"
       },
       {
         "id": "single-molecule-manipulation",
@@ -52,7 +52,7 @@
         "id": "mechanistic-studies",
         "title": "Mechanistic Studies",
         "label": "机制研究",
-        "description": "结合分子动力学与多尺度计算，研究孔道相互作用、分子输运和离子电流信号之间的联系。"
+        "description": "结合分子动力学与有限元模拟，解析孔道–分子相互作用、分子输运及离子电流信号之间的关系。"
       }
     ]
   }
