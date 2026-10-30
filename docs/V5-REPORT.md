@@ -2,7 +2,7 @@
 
 ## 状态与依据
 
-独立分支 codex/site-v5-research-diagrams。本轮在本地完成并验证，未推送或部署。依据作者提供的 F:/deepseek/zhaoxinjia-site-v5-brief.md 与 F:/deepseek/cv/figdraft/fig{1,2,3}-wire.svg/png。工单中的旧素材目录与实际附件位置不同，使用实际提供的文件。用户本轮明确确认继续不加招生信息，因此 Contact 保持原内容。
+独立分支 codex/site-v5-research-diagrams。本轮先在本地完成并验证；作者于 2026-10-30 明确授权上线，随后通过 main 源码与 gh-pages 构建产物发布。依据作者提供的 F:/deepseek/zhaoxinjia-site-v5-brief.md 与 F:/deepseek/cv/figdraft/fig{1,2,3}-wire.svg/png。工单中的旧素材目录与实际附件位置不同，使用实际提供的文件。用户本轮明确确认继续不加招生信息，因此 Contact 保持原内容。
 
 ## 完成内容
 
